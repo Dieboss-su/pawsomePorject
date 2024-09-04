@@ -306,6 +306,8 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -378,7 +380,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -409,12 +411,25 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .125,//2
+  2: $spacer * .25,//4
+  3: $spacer * .5,//8
+  4: $spacer * .75,//12
+  5: $spacer,//16
+  6: $spacer * 1.5,//24
+  7: $spacer * 2,//32
+  8: $spacer * 2.5,//40
+  9: $spacer * 3,//48
+  10: $spacer * 3.5,//56
+  11: $spacer * 4,//64
+  12: $spacer * 9.75,//156
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -486,8 +501,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  xxl: 1416px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -504,8 +518,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  xxl: 1128px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -603,7 +616,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Roboto","Noto Sans CJK TC","Noto Sans TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -626,26 +639,50 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+// $line-height-base:            1.5 !default;
+$line-height-base:            1.6 !default;
+// $line-height-sm:              1.25 !default;
+$line-height-sm:              1.2 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3.5 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.5 !default;
+$h4-font-size:                $font-size-base * 2.25 !default;
+$h5-font-size:                $font-size-base * 2 !default;
+$h6-font-size:                $font-size-base * 1.5!default;
+$b1-font-size:                $font-size-base * 1.25 !default;
+$b2-font-size:                $font-size-base * 1.125 !default;
+$b3-font-size:                $font-size-base * 1 !default;
+$b4-font-size:                $font-size-base * .875 !default;
+$b5-font-size:                $font-size-base * .75 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
+  1: $b5-font-size,//12
+  2: $b4-font-size,//14
+  3: $b3-font-size,//16
+  4: $b2-font-size,//18
+  5: $b1-font-size,//20
+  6: $h6-font-size,//24
+  7: $h5-font-size,//32
+  8: $h4-font-size,//36
+  9: $h3-font-size,//40
+  10: $h2-font-size,//48
+  11: $h1-font-size,//56
 ) !default;
 // scss-docs-end font-sizes
 
