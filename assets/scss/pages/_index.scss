@@ -56,3 +56,72 @@
     }
   }
 }
+.offer{
+  &-badge{
+    border-radius: 12px 1000px 1000px 12px;
+  }
+}
+.index-swiper-1{
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 150px;
+    font-size: 16px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.sm-card{
+  box-shadow: 0px 4.15px 4.15px -2.08px #18274B14;
+  box-shadow: 0px 2.08px 3.11px -2.08px #18274B1F;
+  border: 1px solid #F0F0F0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-btn{
+  width: 44px;
+  height: 44px;
+  padding: 8px 4px;
+  border: 1px solid #BBBBBB;
+  background: white;
+  border-radius: 8px;
+  &:hover{
+    border: 1.5px solid  #EC5501;
+    color:#EC5501 ;
+    font-weight: 500;
+  }
+  &:active{
+    border: 1.5px solid  #EC5501;
+    color:#EC5501 ;
+  }
+}
+.modal-btn-sm{
+  width: 40px;
+  height: 4px;
+  border-radius: 1000px;
+  opacity: 50%;
+  background:  #84848480;
+}
+.vh-85{
+  height: calc(100vh - 15vh);
+}
+.tf-up.tf-up.tf-up{
+  transform: translate(0);
+}
+.sm-modal-rounded{
+  border-radius: 12px 12px 0px 0px;
+}
+.modal-mw-none{
+  max-width: none;
+}
