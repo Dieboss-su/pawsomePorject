@@ -71,9 +71,9 @@
     max-width: 150px;
     font-size: 16px;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include md{
+      max-width: 240px;
+    }
   }
 
   .swiper-slide img {
@@ -82,6 +82,88 @@
     object-fit: cover;
   }
 }
+// swiper-thumb
+.modal-header-boder{
+  border-bottom: 1px solid #F0F0F0;
+  @include s-md{
+    border: none;
+  }
+}
+.modal-body{
+  &::-webkit-scrollbar{display:none;}
+  .swiper {
+    width: 343px;
+    height: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .thumbs-Swiper-2 .swiper-slide{
+    width: 240px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .thumbs-Swiper-2 {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  .thumbs-Swiper {
+    
+    width: 240px;
+    box-sizing: border-box;
+  }
+  .thumbs-Swiper .swiper-slide {
+    width: 40px ;
+    height: 40px;
+    border: 1px solid #BBBBBB;
+    opacity: 0.4;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .thumbs-Swiper .swiper-slide-thumb-active {
+    opacity: 1;
+    border: 1px solid #EC5501;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-btn{
+    padding: 4px 12px 4px 12px;
+    min-height: 44px;
+    border: 1px solid #BBBBBB;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .modal-btn-1{
+    padding: 4px 12px 4px 12px;
+    min-height: 44px;
+    border: 1px solid #BBBBBB;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn-check:checked + .modal-btn, :not(.btn-check) + .modal-btn:active, .modal-btn:first-child:active, .modal-btn.active, .modal-btn.show{
+    border: 2.5px solid #EC5501;
+    color: #EC5501;
+  }
+}
+
 .sm-card{
   box-shadow: 0px 4.15px 4.15px -2.08px #18274B14;
   box-shadow: 0px 2.08px 3.11px -2.08px #18274B1F;
@@ -90,20 +172,35 @@
   overflow: hidden;
 }
 .card-btn{
-  width: 44px;
   height: 44px;
+  width: 44px;
   padding: 8px 4px;
   border: 1px solid #BBBBBB;
   background: white;
   border-radius: 8px;
+  
   &:hover{
     border: 1.5px solid  #EC5501;
     color:#EC5501 ;
     font-weight: 500;
   }
-  &:active{
-    border: 1.5px solid  #EC5501;
-    color:#EC5501 ;
+  &:focus{
+    border: 1.5px solid #EC5501;
+    color: #EC5501;
+  }
+  @include md{
+    padding: 4px 12px 4px 12px;
+    height:auto;
+    width: auto;
+    &:hover{
+      border: 2.5px solid  #EC5501;
+      color:#EC5501 ;
+      font-weight: 500;
+    }
+    &:focus{
+      border: 2.5px solid #EC5501;
+      color: #EC5501;
+    }
   }
 }
 .modal-btn-sm{
@@ -124,4 +221,25 @@
 }
 .modal-mw-none{
   max-width: none;
+  @include md{
+    max-width: 536px;
+  }
+  @include lg{
+    max-width: 992px;
+  }
+}
+
+.card-badge-position{
+  right: 8px;
+  top: 8px;
+  @include md{
+    right: 12px;
+    top: 12px;
+  }
+}
+
+.btn-close{
+  width: 20px;
+  height: 20px;
+  padding: 8px;
 }
