@@ -1,14 +1,15 @@
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import "./utils/variables";
 @import "../../node_modules/bootstrap";
-// api引入設定
-@import'./utils/api.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import "./utils/api.scss";
 @import "bootstrap/scss/utilities/api";
 
-@import'./utils/mixin.scss';
-@import './layout/base.scss';
-@import './utils/input.scss';
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./utils/mixin.scss";
+@import "./layout/base.scss";
+@import "./utils/input.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-@import './pages/index.scss';
+@import "./pages/index.scss";

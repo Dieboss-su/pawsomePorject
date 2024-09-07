@@ -1,4 +1,25 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-icon-style {
+  padding: 12px;
+  color: #111111;
+  font-size: 24px;
+  @include lg {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+.navbar-logo-style {
+  height: 36px;
+  width: 170px;
+  @include lg {
+    height: 50px;
+    width: 220px;
+  }
+}
+.max-width-900 {
+  max-width: 900px;
+}
+.placeholder-color::placeholder {
+  color: $neutral-400; /* 自訂顏色 */
+  opacity: 1; /* 保持不透明度 */
 }
