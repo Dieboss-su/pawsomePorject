@@ -96,6 +96,10 @@
     height: 288px;
     margin-left: auto;
     margin-right: auto;
+    @include lg{
+      width: 100%;
+      height: 100%;
+    }
   }
   
   .thumbs-Swiper-2 .swiper-slide{
@@ -103,7 +107,14 @@
     height: 240px;
     margin-left: auto;
     margin-right: auto;
+    @include lg{
+      width: 100%;
+      height: 100%;
+      max-width: 460px;
+      max-height: 460px;
+    }
   }
+
   .swiper-slide {
     background-size: cover;
     background-position: center;
@@ -118,6 +129,10 @@
     
     width: 240px;
     box-sizing: border-box;
+    @include lg{
+      width: 308px;
+      overflow-x: hidden;
+    }
   }
   .thumbs-Swiper .swiper-slide {
     width: 40px ;
@@ -125,7 +140,11 @@
     border: 1px solid #BBBBBB;
     opacity: 0.4;
     border-radius: 8px;
-    overflow: hidden;
+    @include lg{
+      width:88px;
+      height: 88px;
+      margin-left: 0;
+    }
   }
   
   .thumbs-Swiper .swiper-slide-thumb-active {
@@ -148,6 +167,9 @@
     font-size: 14px;
     border-radius: 8px;
     cursor: pointer;
+    @include md{
+      font-size: 16px;
+    }
   }
   .modal-btn-1{
     padding: 4px 12px 4px 12px;
@@ -218,6 +240,9 @@
 }
 .sm-modal-rounded{
   border-radius: 12px 12px 0px 0px;
+  @include md{
+    border-radius: 12px 12px 12px 12px;
+  }
 }
 .modal-mw-none{
   max-width: none;
@@ -242,4 +267,21 @@
   width: 20px;
   height: 20px;
   padding: 8px;
+}
+
+.w-lg-50{
+  @include lg{
+    width: 50%;
+  }
+}
+.w-lg-70{
+  @include lg{
+    width: 70%;
+  }
+}
+.scroll-hidden{
+  &::-webkit-scrollbar{display:none;}
+}
+.lg-modal-footer{
+  height: 40px;
 }
