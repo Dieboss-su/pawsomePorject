@@ -22,4 +22,11 @@
 .placeholder-color::placeholder {
   color: $neutral-400; /* 自訂顏色 */
   opacity: 1; /* 保持不透明度 */
+  font-size: 16px;
 }
+.navbar-input-height {
+  height: 42px;
+}
+// .line-height-50 {
+//   line-height: 50px;
+// }
