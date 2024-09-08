@@ -435,8 +435,18 @@
       <script>
         var swiper = new Swiper(".index-swiper-1", {
           spaceBetween: 12,
+          grid: {
+            fill: 'row',
+            rows: 3,
+          },
           freeMode: true,
-          watchSlidesProgress: true,
+          freeMode: {
+            momentum: false,
+            momentumBounce: true,
+          }
+
+          // watchSlidesProgress: true,
+          // loop: true,
         });
       </script>
       <!-- 縮略圖 -->
