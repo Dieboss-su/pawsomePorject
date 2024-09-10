@@ -60,14 +60,89 @@
               /> </picture
           ></a>
         </section>
-        <!-- 搜尋列 -->
-        <section class="d-flex">
-          <form class="" role="search">
+        <!-- 搜尋列電腦版-->
+        <section class="d-none d-lg-flex">
+          <form class="me-5" role="search">
             <div class="position-relative">
               <input
                 class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
                 type="search"
                 placeholder="請選擇"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"
+                ></i>
+              </a>
+            </div>
+          </form>
+          <form class="me-5" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="請選擇"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"
+                ></i>
+              </a>
+            </div>
+          </form>
+          <form class="me-5" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="篩選處方功能"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"
+                ></i>
+              </a>
+            </div>
+          </form>
+          <form class="me-5" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="例：小型犬飼料"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-search text-neutral-800 bg-transparent list-icon-24"
+                ></i>
+              </a>
+            </div>
+          </form>
+        </section>
+        <!-- 搜尋列手機版-->
+        <section class="d-flex d-lg-none">
+          <form class="" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="篩選"
                 aria-label="Search"
               />
               <a
