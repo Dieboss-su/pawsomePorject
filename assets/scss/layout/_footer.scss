@@ -1,4 +1,6 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.w-footer-logo{
+  max-width: 195px;
+  @include md{
+    max-width: 165px;
+  }
 }
