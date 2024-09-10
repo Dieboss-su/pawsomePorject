@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catStapleFood</title>
+    <!-- google-icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main style="padding-top: 74px">
+      <div class="container">
+        <!-- 麵包屑 -->
+        <section class="py-7">
+          <nav aria-label="breadcrumb pb-5">
+            <ol class="breadcrumb root-text py-2">
+              <li class="breadcrumb-item">
+                <a
+                  href="index.html"
+                  class="text-neutral-500 text-decoration-none"
+                  >首頁</a
+                >
+              </li>
+              <li
+                class="breadcrumb-item active text-neutral-800"
+                aria-current="page"
+              >
+                貓咪專區
+              </li>
+            </ol>
+          </nav>
+          <a href="./productionList.html">
+            <picture>
+              <source
+                media="(min-width: 992px)"
+                srcset="../assets/images/banner/productlistBanner-1-lg.png"
+                alt="productlistBanner-1-lg"
+                class=""
+              />
+              <img
+                src="../assets/images/banner/productlistBanner-1-sm.png"
+                alt="productlistBanner-1-sm"
+                class="w-100"
+              /> </picture
+          ></a>
+        </section>
+        <!-- 搜尋列 -->
+        <section class="d-flex">
+          <form class="" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="請選擇"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"
+                ></i>
+              </a>
+            </div>
+          </form>
+          <form class="ms-5" role="search">
+            <div class="position-relative">
+              <input
+                class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
+                type="search"
+                placeholder="例：小型犬飼料"
+                aria-label="Search"
+              />
+              <a
+                href="#"
+                class="position-absolute top-50 end-0 translate-middle"
+              >
+                <i
+                  class="bi bi-search text-neutral-800 bg-transparent list-icon-24"
+                ></i>
+              </a>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <!-- //swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".index-swiper-1", {
+        spaceBetween: 16,
+        // slidesPerView: 'auto'
+        slidesOffsetAfter: -800,
+        navigation: {
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
+        },
+        breakpoints: {
+          576: {
+            slidesOffsetAfter: -1800,
+          },
+          768: {
+            //当屏幕宽度大于等于768
+            slidesOffsetAfter: -2000,
+          },
+          992: {
+            //当屏幕宽度大于等于1280
+            slidesOffsetAfter: -2800,
+          },
+          1200: {
+            slidesOffsetAfter: -3000,
+          },
+          1400: {
+            slidesOffsetAfter: -3500,
+          },
+        },
+        // freeMode: true,
+        // freeMode: {
+        //   momentum: false,
+        //   momentumBounce: true,
+        // }
+        // watchSlidesProgress: true,
+        // loop: true,
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".index-swiper-2", {
+        spaceBetween: 16,
+        // slidesPerView: 'auto'
+        slidesOffsetAfter: -1100,
+        navigation: {
+          nextEl: ".swiper-button-next-3",
+          prevEl: ".swiper-button-prev-3",
+        },
+        breakpoints: {
+          400: {
+            slidesOffsetAfter: -1300,
+          },
+          500: {
+            slidesOffsetAfter: -1800,
+          },
+          768: {
+            //当屏幕宽度大于等于768
+            slidesOffsetAfter: -2300,
+          },
+          992: {
+            //当屏幕宽度大于等于1280
+            slidesOffsetAfter: -4000,
+          },
+          1200: {
+            slidesOffsetAfter: -3000,
+          },
+          1400: {
+            slidesOffsetAfter: -4500,
+          },
+        },
+        // freeMode: true,
+        // freeMode: {
+        //   momentum: false,
+        //   momentumBounce: true,
+        // }
+        // watchSlidesProgress: true,
+        // loop: true,
+      });
+    </script>
+    <!-- 縮略圖 -->
+    <script>
+      var swiper = new Swiper(".thumbs-Swiper", {
+        spaceBetween: 12,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          992: {
+            //当屏幕宽度大于等于1280
+            spaceBetween: 12,
+            slidesPerView: 3.5,
+            slidesOffsetBefore: 100,
+            navigation: {
+              nextEl: ".swiper-button-next-2",
+              prevEl: ".swiper-button-prev-2",
+            },
+          },
+        },
+      });
+      var swiper2 = new Swiper(".thumbs-Swiper-2", {
+        spaceBetween: 16,
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        breakpoints: {
+          992: {
+            //当屏幕宽度大于等于1280
+            spaceBetween: 24,
+          },
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>
