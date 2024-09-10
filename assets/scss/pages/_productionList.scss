@@ -17,3 +17,25 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.cat-paw {
+  background-image: url(../images/banner/catpaw-sm.png);
+  width: 100%;
+  height: 32px;
+  background-repeat: repeat-x;
+  @include md {
+    height: 32px;
+    background-image: url(../images/banner/catpaw-lg.png);
+    background-repeat: repeat-x;
+    background-position-x: -150px;
+  }
+}
+
+.cat-nav {
+  .nav-link {
+    color: $neutral-800;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $primary-300;
+  }
+}
