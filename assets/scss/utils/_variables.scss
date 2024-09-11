@@ -651,8 +651,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 0rem !default;
-// $paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 1rem !default;
 
 // Grid breakpoints
 //
@@ -1162,7 +1161,8 @@ $input-focus-width: $input-btn-focus-width !default;
 // $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 $input-focus-box-shadow: (0px 0px 0px 4px #ffe0cc) !default;
 
-$input-placeholder-color: var(--#{$prefix}secondary-color) !default;
+// $input-placeholder-color: var(--#{$prefix}secondary-color) !default;
+$input-placeholder-color: #BBBBBB !default;
 $input-plaintext-color: var(--#{$prefix}body-color) !default;
 
 $input-height-border: calc(

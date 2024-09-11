@@ -124,3 +124,40 @@
     }
     
 }
+
+.base-infor,.adv-infor{
+    .input-btn{
+        padding: 8px 24px 8px 24px;
+        border: 1px solid #BBBBBB;
+        font-size: 16px;
+        border-radius: 1000px;
+        cursor: pointer;
+        @include md{
+          font-size: 16px;
+        }
+      }
+      .btn-check:checked + .input-btn, :not(.btn-check) + .input-btn:active, .input-btn:first-child:active, .input-btn.active, .input-btn.show{
+        border: 2px solid #EC5501;
+        color: #EC5501;
+      }
+}
+.rotate-180{
+    transform: rotateY(180deg);
+}
+.w-cat-dog{
+    width: 161px;
+    height: 116px;
+    @include md{
+        width: 220px;
+        height: 159px;
+    }
+}
+.p-cat-dog{
+    bottom:-20px;
+    right:0;
+    @include md{
+        bottom:-15px;
+        right:0;
+    }
+
+}
