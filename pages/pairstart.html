@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pair</title>
+  <!-- google-icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="pair-start mx-auto container-fluid" style="padding-top: 72px; max-width: 1440px;">
+      <section class="banner py-md-7">
+        <div class="html-tag d-none d-md-block mb-md-7">
+          <a class="fs-3 text-neutral-500" href="index.html">首頁 /</a>
+          <a class="fs-3 text-neutral-700" href="pairstart.html">毛孩商品配對機</a>
+        </div>
+        <picture>
+          <source srcset="../assets/images/banner/Banner-5.png" media="(min-width:768px)">
+          <img class="w-100" src="../assets/images/banner/baner-6.png" alt="商品配對機">
+        </picture>
+      </section>
+      <section class="check-type">
+        <div class="container px-md-0 px-5 py-6 pt-md-7 pb-md-8">
+          <div class="d-flex align-items-center mb-5">
+            <img class="me-2 d-md-none" src="../assets/images/icon/Outline  Fill/fish-outline.svg" alt="魚符號">
+            <img class="me-3 d-none d-md-block" src="../assets/images/icon/Outline  Fill/dog-outline.svg" alt="骨頭符號">
+            <h2 class="fs-md-6 fs-4 text-primary-300 fw-medium">第一步：<span
+                class="text-neutral-800 ms-2 ms-md-3 fs-3 fs-md-6">選擇毛孩種類</span></h2>
+          </div>
+          <input type="radio" class="btn-check" name="type" id="type-dog" autocomplete="off">
+          <label class="head me-5 text-center" for="type-dog">
+            <div class="head-dog rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">狗狗</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-cat" autocomplete="off">
+          <label class="head me-5 text-center" for="type-cat">
+            <div class="head-cat rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">貓咪</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-fish" autocomplete="off">
+          <label class="head me-5 text-center" for="type-fish">
+            <div class="head-fish rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">魚</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-mouse" autocomplete="off">
+          <label class="head me-5 text-center" for="type-mouse">
+            <div class="head-mouse rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">倉鼠</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-rabbit" autocomplete="off">
+          <label class="head me-5 text-center" for="type-rabbit">
+            <div class="head-rabbit rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">兔子</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-bird" autocomplete="off">
+          <label class="head me-5 text-center" for="type-bird">
+            <div class="head-bird rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">鳥</span>
+          </label>
+        </div>
+      </section>
+      <section class="banner-2 section-container mx-auto dog-paw mb-6 mb-md-8">
+      </section>
+      <section class="base-infor">
+        <div class="container px-md-0 px-5 pb-6 pb-md-8">
+          <div class="d-flex align-items-center mb-5">
+            <img class="me-2 d-md-none" src="../assets/images/icon/Outline  Fill/fish-outline.svg" alt="魚符號">
+            <img class="me-3 d-none d-md-block" src="../assets/images/icon/Outline  Fill/dog-outline.svg" alt="骨頭符號">
+            <h2 class="fs-md-6 fs-4 text-primary-300 fw-medium">第二步：<span
+                class="text-neutral-800 ms-2 ms-md-3 fs-3 fs-md-6">填寫基本資料</span></h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
