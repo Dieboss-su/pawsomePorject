@@ -39,3 +39,12 @@
     color: $primary-300;
   }
 }
+.catColumn-p1 {
+  overflow: hidden;
+  height: 64px;
+}
+.catColumn-p2 {
+  text-overflow: ellipsis;
+  height: 26px;
+  overflow: hidden;
+}
