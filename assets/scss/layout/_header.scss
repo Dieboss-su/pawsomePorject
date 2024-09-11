@@ -10,10 +10,10 @@
 
 .navbar-logo-style {
   height: 36px;
-  width: 170px;
+  max-width: 170px;
   @include lg {
     height: 50px;
-    width: 220px;
+    max-width: 220px;
   }
 }
 .max-width-900 {
