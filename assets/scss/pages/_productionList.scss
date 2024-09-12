@@ -132,3 +132,6 @@
     object-fit: cover;
   }
 }
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* 針對瀏覽器（如 Chrome、Safari）隱藏滾動條 */
+}
