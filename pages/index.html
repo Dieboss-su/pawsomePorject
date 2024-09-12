@@ -8784,12 +8784,25 @@
           //   } else {
           //     div.style.display = "block";
           //   }
-          // };
+          // // };
+          // window.addEventListener('scroll', function () {
+          //   var scrollPosition = window.scrollY;  // 當前滾動的位置
+          //   var button = document.getElementById('buycar');
+
+          //   if (scrollPosition > 4500) {  // 假設滾動超過300px時隱藏按鈕
+          //     button.classList.add('hidden');
+          //   } else {
+          //     button.classList.remove('hidden');
+          //   }
+          // });
           window.addEventListener('scroll', function () {
-            var scrollPosition = window.scrollY;  // 當前滾動的位置
+            var scrollPosition = window.scrollY;  // 當前滾動位置
+            var viewportHeight = window.innerHeight;  // 當前視窗的高度
+            var documentHeight = document.documentElement.scrollHeight;  // 文件總高度
+            var distanceFromBottom = documentHeight - (scrollPosition + viewportHeight);  // 計算滾動到頁面底部的距離
             var button = document.getElementById('buycar');
 
-            if (scrollPosition > 4500) {  // 假設滾動超過300px時隱藏按鈕
+            if (distanceFromBottom < 772) {  // 假設滾動到離底部300px時隱藏按鈕
               button.classList.add('hidden');
             } else {
               button.classList.remove('hidden');
