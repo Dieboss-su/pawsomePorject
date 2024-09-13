@@ -1,0 +1,48 @@
+.card-main-height {
+  height: 130px;
+  @include md {
+    height: 138px;
+  }
+}
+.catStapleFood-card-h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: $b4-font-size; //fs-2
+  -webkit-line-clamp: 2; /* 限制顯示兩行 */
+  line-clamp: 2; /* 支援更多瀏覽器 */
+  @include md {
+    font-size: $b2-font-size; //fs-4
+  }
+}
+.catStapleFood-card-btn {
+  height: 44px;
+  width: 44px;
+  border: 1px solid #bbbbbb;
+  background: white;
+  border-radius: 8px;
+
+  &:hover {
+    border: 1.5px solid #ec5501;
+    color: #ec5501;
+    font-weight: 500;
+  }
+  &:focus {
+    border: 1.5px solid #ec5501;
+    color: #ec5501;
+  }
+  @include md {
+    padding: 4px 12px 4px 12px;
+    height: 30px;
+    width: auto;
+    &:hover {
+      border: 2.5px solid #ec5501;
+      color: #ec5501;
+      font-weight: 500;
+    }
+    &:focus {
+      border: 2.5px solid #ec5501;
+      color: #ec5501;
+    }
+  }
+}
