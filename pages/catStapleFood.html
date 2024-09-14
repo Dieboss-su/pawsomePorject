@@ -16,7 +16,8 @@
     />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header'); -%> <%- include('./layout/shoppingCart');
+    -%>
     <main style="padding-top: 74px">
       <div class="container">
         <!-- 麵包屑 -->
@@ -1589,7 +1590,7 @@
             </div>
           </div>
         </section>
-        <section class="py-7">
+        <section class="py-7 d-flex justify-content-center">
           <ul class="catStapleFood-page-nav nav text-center" style="gap: 8px">
             <li class="nav-item">
               <a
@@ -1597,7 +1598,9 @@
                 aria-current="page"
                 href="#"
                 onclick="this.blur(); return false;"
-                >前</a
+                ><span class="material-symbols-outlined">
+                  chevron_left
+                </span></a
               >
             </li>
             <li class="nav-item">
@@ -1635,7 +1638,9 @@
                 aria-current="page"
                 href="#"
                 onclick="this.blur(); return false;"
-                >後</a
+                ><span class="material-symbols-outlined">
+                  chevron_right
+                </span></a
               >
             </li>
           </ul>
