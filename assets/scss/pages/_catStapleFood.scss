@@ -46,3 +46,25 @@
     }
   }
 }
+
+.catStapleFood-page-nav {
+  .nav-item {
+  }
+  .nav-link {
+    width: 36px;
+    height: 38px;
+    border-radius: 4px;
+    color: $neutral-800;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    font-size: $b4-font-size;
+    font-weight: $headings-font-weight;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $primary-300;
+    background-color: $primary-0;
+  }
+}
