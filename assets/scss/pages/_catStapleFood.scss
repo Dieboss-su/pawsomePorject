@@ -4,6 +4,13 @@
     height: 138px;
   }
 }
+.catStapleFood-card {
+  box-shadow: 0 4.15px 4.15px -2.08px rgba(24, 39, 75, 0.08),
+    0 2.08px 3.11px -2.08px rgba(24, 39, 75, 0.12);
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
 .catStapleFood-card-h3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
