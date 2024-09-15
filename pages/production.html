@@ -20,7 +20,7 @@
     <%- include('./layout/header'); -%> <%- include('./layout/shoppingCart');
     -%>
     <main style="padding-top: 74px">
-      <div class="container">
+      <section class="pd-container mx-auto" style="max-width: 1128px;">
         <!-- 麵包屑 -->
         <section class="pt-6 pb-5">
           <nav aria-label="breadcrumb pb-5">
@@ -156,7 +156,6 @@
                     name="meat"
                     id="option1"
                     autocomplete="off"
-                    checked
                   />
                   <label
                     class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
@@ -175,14 +174,13 @@
                     class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
                     for="option2"
                     >雞肉</label
-                  >
-
-                  <input
+                  ><input
                     type="radio"
                     class="btn-check"
                     name="meat"
                     id="option3"
                     autocomplete="off"
+                    checked
                   />
                   <label
                     class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
@@ -204,13 +202,13 @@
                   >
                 </div>
                 <h4 class="fw-medium fs-3 mb-3">選擇規格</h4>
-                <div class="d-flex flex-wrap g-3">
+                <div class="d-flex flex-wrap">
                   <input
                     type="radio"
                     class="btn-check"
                     name="size"
                     id="size-1"
-                    autocomplete="off"
+                    autocomplete="off"                    
                     checked
                   />
                   <label
@@ -241,7 +239,6 @@
                     name="size"
                     id="size-3"
                     autocomplete="off"
-                    checked
                   />
                   <label
                     class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
@@ -256,55 +253,57 @@
                     name="size"
                     id="size-4"
                     autocomplete="off"
-                    checked
                   />
                   <label
-                    class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
+                    class="production-modal-speci-btn d-flex mt-3 flex-column align-items-center"
                     for="size-4"
                     >12磅(袋)<span class="text-neutral-500 fs-1  fw-normal"
                       >$210/磅</span
-                    ></label
-                  >
+                    ></label>
                 </div>
-                <h4 class="fw-normal fs-3 mb-3">方案</h4>
-                <div class="d-flex mb-5 mb-lg-6">
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="plan"
-                    id="plan-1"
-                    autocomplete="off"
-                    checked
-                  />
-                  <label
-                    class="modal-btn d-flex me-3 flex-column align-items-center"
-                    for="plan-1"
-                    >$ 598<span class="text-neutral-500 fs-1"
-                      >非會員</span
-                    ></label
-                  >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="plan"
-                    id="plan-2"
-                    autocomplete="off"
-                    checked
-                  />
-                  <label
-                    class="modal-btn d-flex me-3 flex-column align-items-center"
-                    for="plan-2"
-                    >$ 398<span class="text-neutral-500 fs-1"
-                      >會員現折 200</span
-                    ></label
-                  >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="production-card">
+                   <!-- 非會員價 -->
+                <div class="card  p-4 border border-2  mb-3">
+                  <div class="d-flex">
+                    <input type="radio" class="form-check-input" name="price" id="non-member" autocomplete="off">
+                    <label class="ms-3 form-check-label" for="non-member">
+                      <div class="d-flex align-items-start">
+                        <span class="form-check-label fs-5">非會員價</span>
+                      </div>
+                      <div class="fw-medium fs-3">$1,120</div>
+                    </label>
+                  </div>
                 </div>
+
+                <!-- 會員特惠價 -->
+                <div class="card  p-4 border border-2 border-primary-300">
+                  <div class="d-flex">
+                    <input type="radio" class="form-check-input" name="price" id="member" autocomplete="off" checked>
+                    <label class="ms-3 form-check-label" for="member">
+                      <div class="d-flex align-items-start">
+                        <span class="form-check-label fs-5">會員特惠價</span>
+                      </div>
+                      <div class="fw-medium fs-3">$952 <span class="text-danger fs-6">現省 $168</span></div>
+                      <ul class="mt-2">
+                        <li>為您節省每筆訂單</li>
+                        <li>按照您訂購日程配送</li>
+                        <li>隨時調整訂購單</li>
+                      </ul>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="production-card">
                 <div
                   class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
-                  style="width: 460px; bottom: 0px; right: 0px"
+                  style="width: 231px; bottom: 0px; right: 0px"
                 >
                   <a class="d-block fw-medium link-neutral-0" href="#"
-                    >加入購物車</a
+                    >前往配送方案</a
                   >
                 </div>
               </div>
@@ -321,7 +320,7 @@
             class="modal-footer lg-modal-footer p-0 border-0 d-none d-lg-block"
           ></div>
         </section>
-      </div>
+      </section>
     </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>

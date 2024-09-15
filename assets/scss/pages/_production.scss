@@ -37,3 +37,22 @@
   border-radius: 12px;
   cursor: pointer;
 }
+.btn-check:checked + .production-modal-speci-btn,
+.btn-check:checked + .production-modal-taste-btn,
+:not(.btn-check) + .production-modal-speci-btn:active,
+:not(.btn-check) + .production-modal-taste-btn:active,
+.production-modal-speci-btn:first-child:active,
+.production-modal-taste-btn:first-child:active,
+.production-modal-speci-btn.active,
+.production-modal-taste-btn.active,
+.production-modal-speci-btn.show,
+.production-modal-taste-btn.show {
+  border: 2.5px solid #ec5501;
+  color: #ec5501;
+}
+.production-card {
+  box-shadow: 0 4.15px 12.46px -2.08px rgba(24, 39, 75, 0.08),
+    0 3.11px 6.23px -3.11px rgba(24, 39, 75, 0.12);
+  border-radius: 12px;
+  padding: 24px 16px;
+}
