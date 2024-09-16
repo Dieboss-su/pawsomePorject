@@ -87,3 +87,13 @@
     padding-right: 32px;
   }
 }
+.progress {
+  background-color: $primary-0;
+  border-radius: 10px;
+  height: 8px;
+}
+
+.progress-bar {
+  background-color: $primary-200;
+  border-radius: 10px;
+}
