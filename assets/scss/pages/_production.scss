@@ -174,4 +174,9 @@
       max-width: 264px;
     }
   }
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
 }
