@@ -1,113 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>production</title>
-    <!-- google-icon-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Link progress's CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <%- include('./layout/header'); -%> <%- include('./layout/shoppingCart');
-    -%>
-    <main style="padding-top: 74px">
-      <section class="pd-container mx-auto" style="max-width: 1128px;">
-        <!-- 麵包屑 -->
-        <section class="pt-6 pb-5">
-          <nav aria-label="breadcrumb pb-5">
-            <ol class="breadcrumb root-text py-2">
-              <li class="breadcrumb-item">
-                <a
-                  href="index.html"
-                  class="text-neutral-500 text-decoration-none"
-                  >首頁</a
-                >
-              </li>
-              <li class="breadcrumb-item">
-                <a
-                  href="productionList.html"
-                  class="text-neutral-500 text-decoration-none"
-                  >貓咪專區</a
-                >
-              </li>
-              <li class="breadcrumb-item">
-                <a
-                  href="catStapleFood.html"
-                  class="text-neutral-500 text-decoration-none"
-                  >貓咪主食</a
-                >
-              </li>
-              <li
-                class="breadcrumb-item active text-neutral-800"
-                aria-current="page"
-              >
-                幼貓飼料
-              </li>
-            </ol>
-          </nav>
-        </section>
-        <!-- 商品介紹 -->
-        <section>
-          <div class="modal-body row">
-            <div class="col-md-5">
-              <div class="overflow-x-hidden scroll-hidden">
-                <div
-                  style="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>production</title>
+  <!-- google-icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Link progress's CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%> <%- include('./layout/shoppingCart'); -%>
+      <main style="padding-top: 74px">
+        <section class="pd-container mx-auto" style="max-width: 1128px;">
+          <!-- 麵包屑 -->
+          <section class="pt-6 pb-5">
+            <nav aria-label="breadcrumb pb-5">
+              <ol class="breadcrumb root-text py-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-neutral-500 text-decoration-none">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="productionList.html" class="text-neutral-500 text-decoration-none">貓咪專區</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="catStapleFood.html" class="text-neutral-500 text-decoration-none">貓咪主食</a>
+                </li>
+                <li class="breadcrumb-item active text-neutral-800" aria-current="page">
+                  幼貓飼料
+                </li>
+              </ol>
+            </nav>
+          </section>
+          <!-- 商品介紹 -->
+          <section>
+            <div class="modal-body row">
+              <div class="col-md-5">
+                <div class="overflow-x-hidden scroll-hidden">
+                  <div style="
                     --swiper-navigation-color: #fff;
                     --swiper-pagination-color: #fff;
-                  "
-                  class="Swiper thumbs-Swiper-2"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="../assets/images/modal-2.png" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="../assets/images/modal-3.png" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="../assets/images/modal-1.png" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="../assets/images/modal-4.png" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="../assets/images/modal-5.png" />
-                    </div>
-                  </div>
-                  <!-- <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div> -->
-                </div>
-                <div class="d-flex justify-content-center position-relative">
-                  <div
-                    class="swiper-button-prev-2 p-4 position-absolute"
-                    style="top: 20%; left: 0%"
-                  >
-                    <span class="material-symbols-outlined">
-                      chevron_left
-                    </span>
-                  </div>
-                  <div
-                    class="swiper-button-next-2 p-4 position-absolute"
-                    style="top: 20%; left: 90%"
-                  >
-                    <span class="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </div>
-                  <div thumbsSlider="" class="thumbs-Swiper Swiper mb-5">
-                    <div class="swiper-wrapper justify-content-center">
+                  " class="Swiper thumbs-Swiper-2">
+                    <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="../assets/images/modal-2.png" />
                       </div>
@@ -124,454 +63,411 @@
                         <img src="../assets/images/modal-5.png" />
                       </div>
                     </div>
+                    <!-- <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div> -->
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="d-flex flex-column">
-                <h6 class="fw-medium mb-3">
-                  歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧
-                </h3>
-                <p class="fs-3 mb-3 d-md-none"><u>歐瑞健</u></p>
-                <p class="fs-3 mb-3 d-none d-md-block"><u>Orijen 歐瑞健</u></p>
-                <div class="mb-3 d-flex">
-                  <p class="fs-3 fw-medium">4.0</p>
-                  <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                  <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                  <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                  <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                  <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
-                </div>
-                <div class="p-4 border-bottom border-neutral-200 mb-5">
-                  <a class="fs-3 d-flex fw-medium text-neutral-600" href="#">
-                    運送與付款說明<span class="material-symbols-outlined ms-auto">
-                      keyboard_arrow_down
-                    </span>
-                  </a>
-                </div>
-                <h4 class="fw-medium fs-3 mb-3">選擇口味</h4>
-                <div class="d-flex mb-5">
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="meat"
-                    id="option1"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
-                    for="option1"
-                    >牛肉</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="meat"
-                    id="option2"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
-                    for="option2"
-                    >雞肉</label
-                  ><input
-                    type="radio"
-                    class="btn-check"
-                    name="meat"
-                    id="option3"
-                    autocomplete="off"
-                    checked
-                  />
-                  <label
-                    class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
-                    for="option3"
-                    >六種魚</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="meat"
-                    id="option4"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="production-modal-taste-btn d-flex align-items-center justify-content-center"
-                    for="option4"
-                    >綜合</label
-                  >
-                </div>
-                <h4 class="fw-medium fs-3 mb-3">選擇規格</h4>
-                <div class="d-flex flex-wrap">
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="size-1"
-                    autocomplete="off"                    
-                    checked
-                  />
-                  <label
-                    class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
-                    for="size-1"
-                    >4磅(袋)<span class="text-neutral-500 fs-1  fw-normal"
-                      >$280/磅</span
-                    ></label
-                  >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="size-2"
-                    autocomplete="off"
-                    disabled
-                  />
-                  <label
-                    class="production-modal-speci-btn d-flex me-3 flex-column align-items-center bg-neutral-100 text-neutral-400"
-                    for="size-2"
-                    >4磅x2(袋)<span class="fs-1 fw-normal"
-                      >完售</span
-                    ></label
-                  >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="size-3"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
-                    for="size-3"
-                    >7磅(袋)<span class="text-neutral-500 fs-1  fw-normal"
-                      >$244/磅</span
-                    ></label
-                  >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="size-4"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="production-modal-speci-btn d-flex mt-3 flex-column align-items-center"
-                    for="size-4"
-                    >12磅(袋)<span class="text-neutral-500 fs-1  fw-normal"
-                      >$210/磅</span
-                    ></label>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="production-card">
-                   <!-- 非會員價 -->
-                <div class="card  p-4 border border-2  mb-3">
-                  <div class="d-flex pt-2 ps-2">
-                    <input type="radio" class="form-check-input" name="price" id="non-member" autocomplete="off">
-                    <label class="ms-3 form-check-label" for="non-member">
-                      <div class="d-flex align-items-start">
-                        <span class="form-check-label fs-3">非會員價</span>
+                  <div class="d-flex justify-content-center position-relative">
+                    <div class="swiper-button-prev-2 p-4 position-absolute" style="top: 20%; left: 0%">
+                      <span class="material-symbols-outlined">
+                        chevron_left
+                      </span>
+                    </div>
+                    <div class="swiper-button-next-2 p-4 position-absolute" style="top: 20%; left: 90%">
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                    <div thumbsSlider="" class="thumbs-Swiper Swiper mb-5">
+                      <div class="swiper-wrapper justify-content-center">
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-5.png" />
+                        </div>
                       </div>
-                      <h6 class="fw-medium mt-2">$1,120</h6>
-                    </label>
+                    </div>
                   </div>
-                </div>
-
-                <!-- 會員特惠價 -->
-                <div class="card  p-4 border border-2 border-primary-300">
-                  <div class="d-flex pt-2 ps-2 border-bottom border-neutral-400" style="border:1px;">
-                    <input type="radio" class="form-check-input" name="price" id="member" autocomplete="off" checked>
-                    <label class="ms-3 form-check-label" for="member">
-                      <div class="d-flex">
-                        <span class="form-check-label fs-3 fw-medium">會員特惠價</span>
-                      </div>
-                      <h6 class="fw-medium mt-2 text-primary-300">$952</h6>
-                      <p class="fs-2 text-primary-300 mb-3" >現省 $168</p>
-                    </label>
-                  </div>
-                  <ul class="mt-2 fs-2">
-                    <li>為您節省每筆訂單</li>
-                    <li>按照您訂購日程配送</li>
-                    <li>隨時調整訂購單</li>
-                  </ul>
                 </div>
               </div>
-              <div class="production-card">
-                <div class="d-flex mb-6 align-items-center">
-                  <div class="border border-neutarl-400 d-flex overflow-hidden me-6" style="max-width: 91px; height: 24px;">
-                    <div class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+              <div class="col-md-4">
+                <div class="d-flex flex-column">
+                  <h6 class="fw-medium mb-3">
+                    歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧
+                    </h3>
+                    <p class="fs-3 mb-3 d-md-none"><u>歐瑞健</u></p>
+                    <p class="fs-3 mb-3 d-none d-md-block"><u>Orijen 歐瑞健</u></p>
+                    <div class="mb-3 d-flex">
+                      <p class="fs-3 fw-medium">4.0</p>
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                    </div>
+                    <div class="p-4 border-bottom border-neutral-200 mb-5">
+                      <a class="fs-3 d-flex fw-medium text-neutral-600" href="#">
+                        運送與付款說明<span class="material-symbols-outlined ms-auto">
+                          keyboard_arrow_down
+                        </span>
+                      </a>
+                    </div>
+                    <h4 class="fw-medium fs-3 mb-3">選擇口味</h4>
+                    <div class="d-flex mb-5">
+                      <input type="radio" class="btn-check" name="meat" id="option1" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option1">牛肉</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option2" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option2">雞肉</label><input type="radio" class="btn-check" name="meat" id="option3"
+                        autocomplete="off" checked />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option3">六種魚</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option4" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex align-items-center justify-content-center"
+                        for="option4">綜合</label>
+                    </div>
+                    <h4 class="fw-medium fs-3 mb-3">選擇規格</h4>
+                    <div class="d-flex flex-wrap">
+                      <input type="radio" class="btn-check" name="size" id="size-1" autocomplete="off" checked />
+                      <label class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
+                        for="size-1">4磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$280/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" disabled />
+                      <label
+                        class="production-modal-speci-btn d-flex me-3 flex-column align-items-center bg-neutral-100 text-neutral-400"
+                        for="size-2">4磅x2(袋)<span class="fs-1 fw-normal">完售</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off" />
+                      <label class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
+                        for="size-3">7磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$244/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off" />
+                      <label class="production-modal-speci-btn d-flex mt-3 flex-column align-items-center"
+                        for="size-4">12磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$210/磅</span></label>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="production-card">
+                  <!-- 非會員價 -->
+                  <div class="card  p-4 border border-2  mb-3">
+                    <div class="d-flex pt-2 ps-2">
+                      <input type="radio" class="form-check-input" name="price" id="non-member" autocomplete="off">
+                      <label class="ms-3 form-check-label" for="non-member">
+                        <div class="d-flex align-items-start">
+                          <span class="form-check-label fs-3">非會員價</span>
+                        </div>
+                        <h6 class="fw-medium mt-2">$1,120</h6>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 會員特惠價 -->
+                  <div class="card  p-4 border border-2 border-primary-300">
+                    <div class="d-flex pt-2 ps-2 border-bottom border-neutral-400" style="border:1px;">
+                      <input type="radio" class="form-check-input" name="price" id="member" autocomplete="off" checked>
+                      <label class="ms-3 form-check-label" for="member">
+                        <div class="d-flex">
+                          <span class="form-check-label fs-3 fw-medium">會員特惠價</span>
+                        </div>
+                        <h6 class="fw-medium mt-2 text-primary-300">$952</h6>
+                        <p class="fs-2 text-primary-300 mb-3">現省 $168</p>
+                      </label>
+                    </div>
+                    <ul class="mt-2 fs-2">
+                      <li>為您節省每筆訂單</li>
+                      <li>按照您訂購日程配送</li>
+                      <li>隨時調整訂購單</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="production-card">
+                  <div class="d-flex mb-6 align-items-center">
+                    <div class="border border-neutarl-400 d-flex overflow-hidden me-6"
+                      style="max-width: 91px; height: 24px;">
+                      <div
+                        class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                         <span class="material-symbols-outlined fs-3 text-neutral-400 ">
-                            remove
+                          remove
                         </span>
-                    </div>
-                    <div class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                      </div>
+                      <div class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
                         1</div>
-                    <div class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                      <div
+                        class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
                         <span class="material-symbols-outlined fs-3">
-                            add
+                          add
                         </span>
+                      </div>
                     </div>
-                </div>
-                  <div class="">
-                    <h6 class="fs-3 fw-medium text-success-400 mb-2">有庫存</h6>
-                    <h6 class="fs-3 text-neutral-600 fw-normal">預計1~3天出貨</h6>
+                    <div class="">
+                      <h6 class="fs-3 fw-medium text-success-400 mb-2">有庫存</h6>
+                      <h6 class="fs-3 text-neutral-600 fw-normal">預計1~3天出貨</h6>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
-                  style="width: 231px; bottom: 0px; right: 0px"
-                >
-                  <a class="d-block fw-medium link-neutral-0" href="#"
-                    >前往配送方案</a
-                  >
+                  <div class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
+                    style="width: 231px; bottom: 0px; right: 0px">
+                    <a class="d-block fw-medium link-neutral-0" href="#">前往配送方案</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
           <!-- 商品描述nav -->
-        <section class="pt-7 pb-8">
-          <ul class="production-nav nav nav-underline ms-3 flex-nowrap overflow-x-scroll scroll-hidden p-0" style="gap: 0; white-space: nowrap;">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" onclick="this.blur(); return false;">商品描述</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="this.blur(); return false;">毛孩評價</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="this.blur(); return false;">常見問題</a>
-            </li>
-          </ul>
-        </section>
-        <!-- banner -->
-        <section class="mb-5">
-          <picture>
-            <source media="(min-width: 992px)" srcset="../assets/images/banner/production-lg.png"
-              alt="production-lg" class="" />
-            <img src="../assets/images/banner/production-sm.png" alt="production-sm"
-              class="w-100" />
-          </picture>
-        </section>
-        <!--文章內容 -->
-        <section class="mb-7">
-          <div class="row mb-5 ">
-            <div class="col-md-6 mb-6 mb-md-0">
-              <picture>
-                <source media="(min-width: 992px)" srcset="../assets/images/ORIJEN-lg.png"
-                  alt="ORIJEN-lg" class="" />
-                <img src="../assets/images/ORIJEN-sm.png" alt="ORIJEN-sm"
-                  class="w-100" />
-              </picture>
-            </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-              <h5 class="fs-4 mb-3">ORIJEN 貓糧</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal ">ORIJEN 貓糧含有高達 90% 的動物成分，富含您貓咪需要茁壯成長的動物蛋白。這些營養豐富的新鮮或生動物成分，如家禽和魚類，提供了您的肉食性貓咪保持最佳狀態所需的生物適宜營養。</h6>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-md-6 order-md-2 mb-6 mb-md-0">
-              <picture>
-                <source media="(min-width: 992px)" srcset="../assets/images/very-lg.png"
-                  alt="very-lg" class="" />
-                <img src="../assets/images/very-sm.png" alt="very-sm"
-                  class="w-100" />
-              </picture>
-            </div>
-            <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center">
-              <h5 class="fs-4 mb-3">非常的營養</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal ">確保用最好的食材來滋養自己的身體，因為你愛你的寵物，你也希望為你信賴的夥伴提供同樣的照顧。ORIJEN 貓糧使用最新鮮的食材製成，並富含動物蛋白質，這是你的貓咪天生需要的食物。這種生物適宜的營養幫助你的寵物達到最大潛能，享受更多美好時光和多年健康的陪伴。</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-6 mb-md-0">
-              <picture>
-                <source media="(min-width: 992px)" srcset="../assets/images/absorb-lg.png"
-                  alt="absorb-lg" class="" />
-                <img src="../assets/images/absorb-sm.png" alt="absorb-sm"
-                  class="w-100" />
-              </picture>
-            </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-              <h5 class="fs-4 mb-3">攝取完整的營養</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal ">在野外，你的寵物祖先會食用獵物的每一部分來獲取最大程度的營養。這就是為什麼每款 ORIJEN 配方都包含完整獵物成分，如富含蛋白質的肉類、家禽或魚類，以及多汁且富含營養的內臟。這些營養豐富的成分模仿了你寵物的祖先飲食，提供了解鎖它真正潛力所需的營養。</h6>
-            </div>
-          </div>
-        </section>
-        <!--動物成分 -->
-        <section class="mb-6 mb-md-8">
-          <div class="row production-custom-gap">
-            <div class="col-6 col-md-3 mb-4 mb-md-0">
-              <picture >
-              <source media="(min-width: 992px)" srcset="../assets/images/upto90-lg.png"
-                alt="upto90-lg" class="mb-5" />
-              <img src="../assets/images/upto90-sm.png" alt="upto90-sm"
-                class="w-100" />
-              </picture>
-              <h5 class="fs-5 mt-5 mb-3 text-center">動物成分</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧含有高達 90% 的動物成分，提供高水平的營養蛋白質。</h6>
-            </div>
-            <div class="col-6 col-md-3 mb-4 mb-md-0">
-              <picture >
-              <source media="(min-width: 992px)" srcset="../assets/images/5-lg.png"
-                alt="5-lg" class="mb-5" />
-              <img src="../assets/images/5-sm.png" alt="5-sm"
-                class="w-100" />
-              </picture>
-              <h5 class="fs-5 mt-5 mb-3 text-center">五種新鮮生食材</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal text-center">這些 ORIJEN 配方中的五種成分始終是新鮮或生的動物成分。</h6>
-            </div>
-            <div class="col-6 col-md-3">
-              <picture >
-              <source media="(min-width: 992px)" srcset="../assets/images/diet-lg.png"
-                alt="diet-lg" class="mb-5" />
-              <img src="../assets/images/diet-sm.png" alt="diet-sm"
-                class="w-100" />
-              </picture>
-              <h5 class="fs-5 mt-5 mb-3 text-center">飲食攝取</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal text-center">使用富含營養的完整獵物成分製成，如肉類、家禽或魚類，
-                以及富含營養的內臟。</h6>
-            </div>
-            <div class="col-6 col-md-3">
-              <picture >
-              <source media="(min-width: 992px)" srcset="../assets/images/cereal-lg.png"
-                alt="cereal-lg" class="mb-5" />
-              <img src="../assets/images/cereal-sm.png" alt="cereal-sm"
-                class="w-100" />
-              </picture>
-              <h5 class="fs-5 mt-5 mb-3 text-center">無穀物成分</h5>
-              <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧不含任何添加
-                的穀物成分。</h6>
-            </div>
-          </div>
-        </section>
-        <!--毛孩評價 -->
-        <section
-          class="d-flex justify-content-between align-items-center"
-        >
-          <h6 class="">毛孩評價</h6>
-          <button
-            class="btn border-primary-400 text-primary-300 d-lg-flex d-none"
-          >
-            最相關<span
-              class="ps-2 material-symbols-outlined fs-5 align-middle"
-            >
-              filter_list
-            </span>
-          </button>
-        </section>
-        <!--毛孩評價 -->
-        <section>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="d-flex">
-                <div class="me-4">
-                  <h3 class="mb-4 text-center">4.2</h3>
-                  <div class="mb-4 d-flex justify-content-center">
-                    <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                    <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                    <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                    <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
-                    <img class="ms-2" style="width: 24px;height: 24px;" src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
-                  </div>
-                  <h4 class="fs-2 fw-normal text-primary-300 text-decoration-underline text-center">300則評論</h4>
-                </div>
-                <!--進度條 -->
-                <div>
-                  <!-- 測試: bootstrap原始的 -->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <!-- 進度條 1 (69.2%) -->
-                  <div class="progress mb-3">
-                    <div class="progress-bar" role="progressbar" style="width: 69.2%" aria-valuenow="69.2" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-
-                  <!-- 進度條 2 (6.5%) -->
-                  <div class="progress mb-3">
-                    <div class="progress-bar" role="progressbar" style="width: 6.5%" aria-valuenow="6.5" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-
-                  <!-- 進度條 3 (4.6%) -->
-                  <div class="progress mb-3">
-                    <div class="progress-bar" role="progressbar" style="width: 4.6%" aria-valuenow="4.6" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-
-                  <!-- 進度條 4 (0%) -->
-                  <div class="progress mb-3">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-
-                  <!-- 進度條 5 (0%) -->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
+          <section class="pt-7 pb-8">
+            <ul class="production-nav nav nav-underline ms-3 flex-nowrap overflow-x-scroll scroll-hidden p-0"
+              style="gap: 0; white-space: nowrap;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" onclick="this.blur(); return false;">商品描述</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="this.blur(); return false;">毛孩評價</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="this.blur(); return false;">常見問題</a>
+              </li>
+            </ul>
+          </section>
+          <!-- banner -->
+          <section class="mb-5">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/banner/production-lg.png" alt="production-lg"
+                class="" />
+              <img src="../assets/images/banner/production-sm.png" alt="production-sm" class="w-100" />
+            </picture>
+          </section>
+          <!--文章內容 -->
+          <section class="mb-7">
+            <div class="row mb-5 ">
+              <div class="col-md-6 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/ORIJEN-lg.png" alt="ORIJEN-lg" class="" />
+                  <img src="../assets/images/ORIJEN-sm.png" alt="ORIJEN-sm" class="w-100" />
+                </picture>
               </div>
-              <!--下面button -->
-              <div>下面button</div>
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">ORIJEN 貓糧</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">ORIJEN 貓糧含有高達 90%
+                  的動物成分，富含您貓咪需要茁壯成長的動物蛋白。這些營養豐富的新鮮或生動物成分，如家禽和魚類，提供了您的肉食性貓咪保持最佳狀態所需的生物適宜營養。</h6>
+              </div>
             </div>
-            <div class="col-md-8"></div>
-          </div>
-        </section>
-      </section>
-    </main>
-    <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
-    <!-- //swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <div class="row mb-5">
+              <div class="col-md-6 order-md-2 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/very-lg.png" alt="very-lg" class="" />
+                  <img src="../assets/images/very-sm.png" alt="very-sm" class="w-100" />
+                </picture>
+              </div>
+              <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">非常的營養</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">確保用最好的食材來滋養自己的身體，因為你愛你的寵物，你也希望為你信賴的夥伴提供同樣的照顧。ORIJEN
+                  貓糧使用最新鮮的食材製成，並富含動物蛋白質，這是你的貓咪天生需要的食物。這種生物適宜的營養幫助你的寵物達到最大潛能，享受更多美好時光和多年健康的陪伴。</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/absorb-lg.png" alt="absorb-lg" class="" />
+                  <img src="../assets/images/absorb-sm.png" alt="absorb-sm" class="w-100" />
+                </picture>
+              </div>
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">攝取完整的營養</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">在野外，你的寵物祖先會食用獵物的每一部分來獲取最大程度的營養。這就是為什麼每款 ORIJEN
+                  配方都包含完整獵物成分，如富含蛋白質的肉類、家禽或魚類，以及多汁且富含營養的內臟。這些營養豐富的成分模仿了你寵物的祖先飲食，提供了解鎖它真正潛力所需的營養。</h6>
+              </div>
+            </div>
+          </section>
+          <!--動物成分 -->
+          <section class="mb-6 mb-md-8">
+            <div class="row production-custom-gap">
+              <div class="col-6 col-md-3 mb-4 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/upto90-lg.png" alt="upto90-lg"
+                    class="mb-5" />
+                  <img src="../assets/images/upto90-sm.png" alt="upto90-sm" class="w-100" />
+                </picture>
+                <h5 class="fs-5 mt-5 mb-3 text-center">動物成分</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧含有高達 90% 的動物成分，提供高水平的營養蛋白質。</h6>
+              </div>
+              <div class="col-6 col-md-3 mb-4 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/5-lg.png" alt="5-lg" class="mb-5" />
+                  <img src="../assets/images/5-sm.png" alt="5-sm" class="w-100" />
+                </picture>
+                <h5 class="fs-5 mt-5 mb-3 text-center">五種新鮮生食材</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal text-center">這些 ORIJEN 配方中的五種成分始終是新鮮或生的動物成分。</h6>
+              </div>
+              <div class="col-6 col-md-3">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/diet-lg.png" alt="diet-lg" class="mb-5" />
+                  <img src="../assets/images/diet-sm.png" alt="diet-sm" class="w-100" />
+                </picture>
+                <h5 class="fs-5 mt-5 mb-3 text-center">飲食攝取</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal text-center">使用富含營養的完整獵物成分製成，如肉類、家禽或魚類，
+                  以及富含營養的內臟。</h6>
+              </div>
+              <div class="col-6 col-md-3">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/cereal-lg.png" alt="cereal-lg"
+                    class="mb-5" />
+                  <img src="../assets/images/cereal-sm.png" alt="cereal-sm" class="w-100" />
+                </picture>
+                <h5 class="fs-5 mt-5 mb-3 text-center">無穀物成分</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧不含任何添加
+                  的穀物成分。</h6>
+              </div>
+            </div>
+          </section>
+          <!--毛孩評價 -->
+          <section class="d-flex justify-content-between align-items-center">
+            <h6 class="">毛孩評價</h6>
+            <button class="btn border-primary-400 text-primary-300 d-lg-flex d-none">
+              最相關<span class="ps-2 material-symbols-outlined fs-5 align-middle">
+                filter_list
+              </span>
+            </button>
+          </section>
+          <!--毛孩評價 -->
+          <section>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <div class="me-4">
+                    <h3 class="mb-4 text-center">4.2</h3>
+                    <div class="mb-4 d-flex justify-content-center">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                    </div>
+                    <h4 class="fs-2 fw-normal text-primary-300 text-decoration-underline text-center">300則評論</h4>
+                  </div>
+                  <!--進度條 -->
+                  <div>
+                    <!-- 測試: bootstrap原始的 -->
+                    <div class="progress">
+                      <div class="progress-bar " role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <!-- 進度條 1 (69.2%) -->
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" style="width: 69.2%" aria-valuenow="69.2"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
-    <!-- Initialize Swiper -->
-    <!-- 縮略圖 -->
-    <script>
-      var swiper = new Swiper(".thumbs-Swiper", {
-        spaceBetween: 12,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-        breakpoints: {
-          992: {
-            //当屏幕宽度大于等于1280
+                    <!-- 進度條 2 (6.5%) -->
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" style="width: 6.5%" aria-valuenow="6.5"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <!-- 進度條 3 (4.6%) -->
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" style="width: 4.6%" aria-valuenow="4.6"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <!-- 進度條 4 (0%) -->
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+
+                    <!-- 進度條 5 (0%) -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <!--下面button -->
+                <div>下面button</div>
+              </div>
+              <div class="col-md-8"></div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <!-- //swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <!-- 縮略圖 -->
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper", {
             spaceBetween: 12,
-            slidesPerView: 3.5,
-            slidesOffsetBefore: 100,
-            navigation: {
-              nextEl: ".swiper-button-next-2",
-              prevEl: ".swiper-button-prev-2",
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {
+                //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: ".swiper-button-next-2",
+                  prevEl: ".swiper-button-prev-2",
+                },
+              },
             },
-          },
-        },
-      });
-      var swiper2 = new Swiper(".thumbs-Swiper-2", {
-        spaceBetween: 16,
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
-        breakpoints: {
-          992: {
-            //当屏幕宽度大于等于1280
-            spaceBetween: 24,
-          },
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
-  </body>
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-2", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {
+                //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+        </script>
+</body>
+
 </html>
