@@ -18,7 +18,7 @@
       <main style="padding-top: 74px">
         <div class="container">
           <!-- 麵包屑 -->
-          <section class="py-7">
+          <section class="pt-5 pb-7">
             <nav aria-label="breadcrumb pb-5">
               <ol class="breadcrumb root-text py-2">
                 <li class="breadcrumb-item">
@@ -40,13 +40,15 @@
           </section>
           <!-- 搜尋列 -->
           <section class="d-flex">
-            <form class="" role="search">
-              <div class="position-relative">
+            <form class="" role="search" >
+              <div class="position-relative" style="width: 104px;">
                 <input
                   class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
                   type="search" placeholder="請選擇" aria-label="Search" />
-                <a href="#" class="position-absolute top-50 end-0 translate-middle">
-                  <i class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"></i>
+                <a href="#" class="position-absolute top-50 end-0 translate-middle d-flex align-items-center justify-content-center">
+                  <span class="material-symbols-outlined list-icon-20 text-neutral-800">
+                    keyboard_arrow_down
+                    </span>
                 </a>
               </div>
             </form>
@@ -56,18 +58,28 @@
                   class="form-control radius-pill bg-white border border-1 border-neutral-400 placeholder-color navbar-input-height"
                   type="search" placeholder="例：幼貓飼料" aria-label="Search" />
                 <a href="#" class="position-absolute top-50 end-0 translate-middle">
-                  <i class="bi bi-search text-neutral-800 bg-transparent list-icon-24"></i>
+                  <span class="material-symbols-outlined list-icon-24 d-flex align-items-center justify-content-center">
+                    search
+                    </span>
                 </a>
               </div>
             </form>
           </section>
           <!-- 暢銷排行 -->
           <section class="hot bg-primary-0 overflow-hidden rounded-md-2 mx-auto section-container my-6 my-lg-7 ">
-            <div class="d-flex flex-column align-items-start d-md-none">
-              <span
+            <div class="d-flex align-items-start d-md-none">
+              <div
                 class="me-3 section-badge text-neutral-0 bg-primary-300 px-6 ps-5 ps-md-4 py-2 py-md-4 fs-5 fs-md-6">
                 <img class="me-2 " src="../assets/images/icon/Fire.svg" alt="fire">暢銷排行
-              </span>
+            </div>
+            <div class=" d-flex position-static ms-auto">
+              <div class="swiper-button-prev-1 p-4 me-4 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-f5dd3d8cc9d30bb2" aria-disabled="true"><span class="material-symbols-outlined text-primary-300">
+                  chevron_left
+                </span></div>
+              <div class="swiper-button-next-1 p-4" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-f5dd3d8cc9d30bb2" aria-disabled="false"><span class="material-symbols-outlined text-primary-300">
+                  chevron_right
+                </span></div>
+            </div>
               
             </div>
             <div class="container ps-5 px-md-0 pb-5 pb-md-3 position-relative">
@@ -76,20 +88,6 @@
                   <span class="me-6 section-badge text-neutral-0 bg-primary-300 p-4 pe-6 fs-5 fs-md-6">
                     <img class="me-2 " src="../assets/images/icon/Fire.svg" alt="fire">暢銷排行
                   </span>
-                  <nav>
-                    <div class="nav " id="nav-tab" role="tablist">
-                      <button class="nav-tietle" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#hot-dog"
-                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">狗</button>
-                      <button class="nav-tietle" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#hot-cat"
-                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">貓</button>
-                      <button class="nav-tietle" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#hot-fish"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">魚</button>
-                      <button class="nav-tietle" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#hot-mouse"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">倉鼠</button>
-                      <button class="nav-tietle" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#hot-bird"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">鳥</button>
-                    </div>
-                  </nav>
                 </div>
                 <div class=" d-flex position-static ms-auto">
                   <div class="swiper-button-prev-1 p-4 me-4"><span class="material-symbols-outlined text-primary-300">
@@ -111,7 +109,7 @@
                               <img src="../assets/images/cat-9.png" alt="EVARK 渴望 無穀貓糧">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">1</span>
+                                <span class="fs-4 text-neutral-0">1</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -153,7 +151,7 @@
                               <img src="../assets/images/toy-7.png" alt="藏食玩具">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">2</span>
+                                <span class="fs-4 text-neutral-0">2</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -191,7 +189,7 @@
                               <img src="../assets/images/Dog-10-1.png" alt="寶貝餌子">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">3</span>
+                                <span class="fs-4 text-neutral-0">3</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -230,7 +228,7 @@
                               <img src="../assets/images/Other-2.png" alt="尿布墊">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">4</span>
+                                <span class="fs-4 text-neutral-0">4</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -267,7 +265,7 @@
                               <img src="../assets/images/toy.png" alt="磨牙咬膠玩具">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">5</span>
+                                <span class="fs-4 text-neutral-0">5</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -316,7 +314,7 @@
                               <img src="../assets/images/toy.png" alt="磨牙咬膠玩具">
                               <div
                                 class="flag-badge d-flex justify-content-center align-items-center position-absolute top-0 flag-badge-position">
-                                <span class="fs-2 text-neutral-0">6</span>
+                                <span class="fs-4 text-neutral-0">6</span>
                               </div>
                             </div>
                             <div class="p-3">
@@ -1412,7 +1410,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-3 d-md-flex d-none">
+              <div class="p-3 d-flex justify-content-end">
                 <span class="py-2 px-4 fw-medium text-primary-300 ms-auto"><a class="fs-2 " href="#">更多<span
                       class="material-symbols-outlined fs-3 ms-2 align-middle">
                       chevron_right
@@ -1428,7 +1426,7 @@
               <ul class="cat-nav nav nav-underline ms-3 flex-nowrap overflow-x-scroll scroll-hidden"
                 style="gap: 0; white-space: nowrap;">
                 <li class="nav-item">
-                  <a class="nav-link px-5" aria-current="page" href="#" onclick="this.blur(); return false;">貓咪主食</a>
+                  <a class="nav-link px-5  active" aria-current="page" href="#" onclick="this.blur(); return false;">貓咪主食</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link px-5" href="#" onclick="this.blur(); return false;">貓咪零食</a>
@@ -1664,7 +1662,7 @@
               <ul class="cat-nav nav nav-underline ms-3 flex-nowrap overflow-x-scroll scroll-hidden"
                 style="gap: 0; white-space: nowrap;">
                 <li class="nav-item">
-                  <a class="nav-link px-5" aria-current="page" href="#" onclick="this.blur(); return false;">貓砂</a>
+                  <a class="nav-link px-5  active" aria-current="page" href="#" onclick="this.blur(); return false;">貓砂</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link px-5" href="#" onclick="this.blur(); return false;">貓砂盆</a>

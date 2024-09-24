@@ -108,6 +108,12 @@
     object-fit: cover;
   }
 }
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 700;
+  color: $primary-300;
+  border-bottom-color: currentcolor;
+}
 
 .productionList-swiper-4 {
   .swiper {
