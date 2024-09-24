@@ -1694,7 +1694,7 @@
               </div>
             </div>
             <!-- 貓咪用品swiper -->
-            <div class="swiper productionList-swiper-3 py-5">
+            <div class="swiper productionList-swiper-3 py-md-5 pt-5 pb-0">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="sm-card">
@@ -1883,7 +1883,7 @@
             </div>
           </section>
           <!-- 貓咪腳印 -->
-          <section class="section-container mx-auto cat-paw my-7">
+          <section class="section-container mx-auto cat-paw my-md-7 my-6">
           </section>
           </section>
           <!-- 貓咪專欄 -->
@@ -2212,7 +2212,7 @@
             //   momentumBounce: true,
             // }
             // watchSlidesProgress: true,
-            loop: true,
+            // loop: true,
           });
         </script>
         <!-- 貓砂 -->
@@ -2220,12 +2220,19 @@
           var swiper = new Swiper(".productionList-swiper-3", {
             spaceBetween: 16,
             // slidesPerView: 'auto'
-            slidesOffsetAfter: -900,
+            slidesPerView: 2.1,
+            // slidesOffsetAfter: -900,
             navigation: {
               nextEl: '.swiper-button-next-3',
               prevEl: '.swiper-button-prev-3',
             },
           })
+          loop: false;  // 確保循環模式關閉
+          allowSlideNext: true;  // 允許向後滑動
+          allowSlidePrev: true;  // 允許向前滑動
+          slidesOffsetAfter: 0;  // 確保沒有額外的偏移
+          slidesOffsetBefore: 0;  // 確保沒有額外的偏移
+          watchOverflow: true;
           // freeMode: true,
           // freeMode: {
           //   momentum: false,
@@ -2233,7 +2240,7 @@
           // }
           // watchSlidesProgress: true,
           // loop: true,
-
+          
         </script>
         <script>
           var swiper = new Swiper(".productionList-swiper-4", {
