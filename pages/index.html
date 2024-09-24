@@ -15,7 +15,7 @@
 
 <body>
   <%- include('./layout/header'); -%>
-    <div class="mx-auto" style="padding-top: 74px; max-width: 1440px;">
+    <div class="mx-auto fixed-p" style="max-width: 1440px;">
       <div id="buycar"
         class=" bottom-0 bg-neutral-0 position-fixed w-100 d-flex justify-content-center py-4 px-6 d-md-none"
         style="z-index: 100;">
@@ -27,7 +27,7 @@
         </div>
         <div class="d-flex">
           <a href="#">
-            <img class=" buy-car-shadow rounded-full" style="width: 44px; height: 44px;"
+            <img class=" buy-car-shadow rounded-full" style="width: 44px; height: 44px; max-width: none;"
               src="../assets/images/Illustration/Avatar.png" alt="貓頭">
           </a>
         </div>
@@ -37,11 +37,11 @@
           style="right: 32px; bottom: 32px;" src="../assets/images/Illustration/Avatar.png" alt="貓頭">
       </a>
       <section class="banner">
-        <a class="d-md-none" href="pairstart.html"><img class="mb-6" src="../assets/images/banner/毛孩配對機.png"
+        <a class="d-md-none" href="pairstart.html"><img class="mb-6 w-100" src="../assets/images/banner/毛孩配對機-sm.png"
             alt="毛孩配對機"></a>
         <div class="container pt-md-7 px-0">
           <div class="d-md-flex">
-            <a class=" d-none mb-md-0 me-md-6 d-md-block" href="pairstart.html"><img
+            <a class=" d-none mb-md-0 me-md-6 d-md-block" href="pairstart.html"><img style="max-height: 303px;"
                 src="../assets/images/banner/毛孩配對機.png" alt="毛孩配對機"></a>
             <div class="d-none d-md-flex flex-column justify-content-between">
               <a href=""><img src="../assets/images/banner/Advance.png" alt="專業飼主"></a>
@@ -56,7 +56,7 @@
           </div>
         </div>
       </section>
-      <section class="pet-type">
+      <section class="pet-type ">
         <div class="container px-md-0 px-5 py-6 py-md-7">
           <h2 class="fs-5 fs-md-6 mb-4 text-md-center">寵物專區</h2>
           <div class="d-md-flex justify-content-md-center">
@@ -299,7 +299,7 @@
                           則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">25</span>
                       </span>
                       <div class="d-flex align-items-center">
-                        <button type="button" class=" me-2 card-btn fs-1 fs-md-2">
+                        <button type="button" class=" me-2 card-btn fs-1 fs-md-2 ">
                           5kg
                         </button>
                         <button type="button" class="card-btn fs-1 fs-md-2 me-2 ">
@@ -490,8 +490,8 @@
           </span>
           <nav>
             <div class="nav " id="nav-tab" role="tablist">
-              <button class="nav-tietle" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#hot-dog" type="button"
-                role="tab" aria-controls="nav-home" aria-selected="true">狗</button>
+              <button class="nav-tietle active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#hot-dog"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">狗</button>
               <button class="nav-tietle" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#hot-cat"
                 type="button" role="tab" aria-controls="nav-profile" aria-selected="false">貓</button>
               <button class="nav-tietle" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#hot-fish"
@@ -511,7 +511,7 @@
               </span>
               <nav>
                 <div class="nav " id="nav-tab" role="tablist">
-                  <button class="nav-tietle" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#hot-dog"
+                  <button class="nav-tietle active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#hot-dog"
                     type="button" role="tab" aria-controls="nav-home" aria-selected="true">狗</button>
                   <button class="nav-tietle" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#hot-cat"
                     type="button" role="tab" aria-controls="nav-profile" aria-selected="false">貓</button>
@@ -1865,7 +1865,7 @@
           <div class="d-flex  w-100 d-md-none mb-5">
             <div class="nav  nav-pills flex-nowrap overflow-x-scroll scroll-hidden" id="v-pills-tab" role="tablist"
               aria-orientation="vertical">
-              <button class="nav-tietle-dog fw-medium text-nowrap" id="v-pills-home-tab" data-bs-toggle="pill"
+              <button class="nav-tietle-dog fw-medium text-nowrap active" id="v-pills-home-tab" data-bs-toggle="pill"
                 data-bs-target="#dog-items-1" type="button" role="tab" aria-controls="dog-items-1"
                 aria-selected="true">狗糧</button>
               <button class="nav-tietle-dog text-nowrap" id="v-pills-profile-tab" data-bs-toggle="pill"
@@ -1900,7 +1900,7 @@
                 <div class="d-flex align-items-start w-100">
                   <div class="nav flex-column nav-pills text-overflow-ellipsis" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
-                    <button class="nav-tietle-dog fw-medium " id="v-pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-tietle-dog fw-medium active" id="v-pills-home-tab" data-bs-toggle="pill"
                       data-bs-target="#dog-items-1" type="button" role="tab" aria-controls="dog-items-1"
                       aria-selected="true">狗糧</button>
                     <button class="nav-tietle-dog" id="v-pills-profile-tab" data-bs-toggle="pill"
@@ -8614,203 +8614,204 @@
           </div>
         </div>
       </section>
-      <%- include('./layout/footer'); -%>
+    </div>
+    <%- include('./layout/footer'); -%>
 
-        <script type="module" src="../main.js"></script>
-        <!-- //swiper -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".index-swiper-1", {
-            spaceBetween: 16,
-            // slidesPerView: 'auto'
-            slidesOffsetAfter: -800,
-            navigation: {
-              nextEl: '.swiper-button-next-1',
-              prevEl: '.swiper-button-prev-1',
+      <script type="module" src="../main.js"></script>
+      <!-- //swiper -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".index-swiper-1", {
+          spaceBetween: 16,
+          // slidesPerView: 'auto'
+          slidesOffsetAfter: -800,
+          navigation: {
+            nextEl: '.swiper-button-next-1',
+            prevEl: '.swiper-button-prev-1',
+          },
+          breakpoints: {
+            400: {
+              slidesOffsetAfter: -1100,
             },
-            breakpoints: {
-              400: {
-                slidesOffsetAfter: -1100,
-              },
-              500: {
-                slidesOffsetAfter: -1500,
-              },
-              768: {  //当屏幕宽度大于等于768 
-                slidesOffsetAfter: -2000,
-              },
-              992: {  //当屏幕宽度大于等于1280
-                slidesOffsetAfter: -2800,
-              },
-              1200: {
-                slidesOffsetAfter: -3000,
-              },
-              1400: {
-                slidesOffsetAfter: -3500,
-              },
-            }
-            // freeMode: true,
-            // freeMode: {
-            //   momentum: false,
-            //   momentumBounce: true,
-            // }
-            // watchSlidesProgress: true,
-            // loop: true,
-          });
-        </script>
+            500: {
+              slidesOffsetAfter: -1500,
+            },
+            768: {  //当屏幕宽度大于等于768 
+              slidesOffsetAfter: -2000,
+            },
+            992: {  //当屏幕宽度大于等于1280
+              slidesOffsetAfter: -2800,
+            },
+            1200: {
+              slidesOffsetAfter: -3000,
+            },
+            1400: {
+              slidesOffsetAfter: -3500,
+            },
+          }
+          // freeMode: true,
+          // freeMode: {
+          //   momentum: false,
+          //   momentumBounce: true,
+          // }
+          // watchSlidesProgress: true,
+          // loop: true,
+        });
+      </script>
 
-        <script>
-          var swiper = new Swiper(".index-swiper-4", {
-            spaceBetween: 16,
-            // slidesPerView: 'auto'
-            slidesOffsetAfter: -900,
-            navigation: {
-              nextEl: '.swiper-button-next-1',
-              prevEl: '.swiper-button-prev-1',
+      <script>
+        var swiper = new Swiper(".index-swiper-4", {
+          spaceBetween: 16,
+          // slidesPerView: 'auto'
+          slidesOffsetAfter: -900,
+          navigation: {
+            nextEl: '.swiper-button-next-1',
+            prevEl: '.swiper-button-prev-1',
+          },
+          breakpoints: {
+            400: {
+              slidesOffsetAfter: -1180,
             },
-            breakpoints: {
-              400: {
-                slidesOffsetAfter: -1180,
-              },
-              500: {
-                slidesOffsetAfter: -1800,
-              },
-              768: {  //当屏幕宽度大于等于768 
-                slidesOffsetAfter: -3200,
-              },
-              992: {  //当屏幕宽度大于等于1280
-                slidesOffsetAfter: -5000,
-              },
-              1200: {
-                slidesOffsetAfter: -4800,
-              },
-              1400: {
-                slidesOffsetAfter: -5800,
-              },
-            }
-            // freeMode: true,
-            // freeMode: {
-            //   momentum: false,
-            //   momentumBounce: true,
-            // }
-            // watchSlidesProgress: true,
-            // loop: true,
-          });
-        </script>
+            500: {
+              slidesOffsetAfter: -1800,
+            },
+            768: {  //当屏幕宽度大于等于768 
+              slidesOffsetAfter: -3200,
+            },
+            992: {  //当屏幕宽度大于等于1280
+              slidesOffsetAfter: -5000,
+            },
+            1200: {
+              slidesOffsetAfter: -4800,
+            },
+            1400: {
+              slidesOffsetAfter: -5800,
+            },
+          }
+          // freeMode: true,
+          // freeMode: {
+          //   momentum: false,
+          //   momentumBounce: true,
+          // }
+          // watchSlidesProgress: true,
+          // loop: true,
+        });
+      </script>
 
-        <script>
-          var swiper = new Swiper(".index-swiper-2", {
-            spaceBetween: 16,
-            // slidesPerView: 'auto'
-            slidesOffsetAfter: -1100,
-            navigation: {
-              nextEl: '.swiper-button-next-3',
-              prevEl: '.swiper-button-prev-3',
+      <script>
+        var swiper = new Swiper(".index-swiper-2", {
+          spaceBetween: 16,
+          // slidesPerView: 'auto'
+          slidesOffsetAfter: -1100,
+          navigation: {
+            nextEl: '.swiper-button-next-3',
+            prevEl: '.swiper-button-prev-3',
+          },
+          breakpoints: {
+            400: {
+              slidesOffsetAfter: -1300,
             },
-            breakpoints: {
-              400: {
-                slidesOffsetAfter: -1300,
-              },
-              500: {
-                slidesOffsetAfter: -1800,
-              },
-              768: {  //当屏幕宽度大于等于768 
-                slidesOffsetAfter: -2300,
-              },
-              992: {  //当屏幕宽度大于等于1280
-                slidesOffsetAfter: -4000,
-              },
-              1200: {
-                slidesOffsetAfter: -3000,
-              },
-              1400: {
-                slidesOffsetAfter: -4500,
-              },
-            }
-            // freeMode: true,
-            // freeMode: {
-            //   momentum: false,
-            //   momentumBounce: true,
-            // }
-            // watchSlidesProgress: true,
-            // loop: true,
-          });
-        </script>
-        <!-- 縮略圖 -->
-        <script>
-          var swiper = new Swiper(".thumbs-Swiper", {
-            spaceBetween: 12,
-            slidesPerView: 5,
-            freeMode: true,
-            watchSlidesProgress: true,
-            breakpoints: {
-              992: {  //当屏幕宽度大于等于1280
-                spaceBetween: 12,
-                slidesPerView: 3.5,
-                slidesOffsetBefore: 100,
-                navigation: {
-                  nextEl: '.swiper-button-next-2',
-                  prevEl: '.swiper-button-prev-2',
-                },
-              },
+            500: {
+              slidesOffsetAfter: -1800,
             },
-          });
-          var swiper2 = new Swiper(".thumbs-Swiper-2", {
-            spaceBetween: 16,
-            // navigation: {
-            //   nextEl: ".swiper-button-next",
-            //   prevEl: ".swiper-button-prev",
-            // },
-            breakpoints: {
-              992: {  //当屏幕宽度大于等于1280
-                spaceBetween: 24,
+            768: {  //当屏幕宽度大于等于768 
+              slidesOffsetAfter: -2300,
+            },
+            992: {  //当屏幕宽度大于等于1280
+              slidesOffsetAfter: -4000,
+            },
+            1200: {
+              slidesOffsetAfter: -3000,
+            },
+            1400: {
+              slidesOffsetAfter: -4500,
+            },
+          }
+          // freeMode: true,
+          // freeMode: {
+          //   momentum: false,
+          //   momentumBounce: true,
+          // }
+          // watchSlidesProgress: true,
+          // loop: true,
+        });
+      </script>
+      <!-- 縮略圖 -->
+      <script>
+        var swiper = new Swiper(".thumbs-Swiper", {
+          spaceBetween: 12,
+          slidesPerView: 5,
+          freeMode: true,
+          watchSlidesProgress: true,
+          breakpoints: {
+            992: {  //当屏幕宽度大于等于1280
+              spaceBetween: 12,
+              slidesPerView: 3.5,
+              slidesOffsetBefore: 100,
+              navigation: {
+                nextEl: '.swiper-button-next-2',
+                prevEl: '.swiper-button-prev-2',
               },
             },
-            thumbs: {
-              swiper: swiper,
+          },
+        });
+        var swiper2 = new Swiper(".thumbs-Swiper-2", {
+          spaceBetween: 16,
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+          breakpoints: {
+            992: {  //当屏幕宽度大于等于1280
+              spaceBetween: 24,
             },
-          });
-        </script>
-        <!-- 滾動 -->
-        <script>
-          // window.onscroll = function () {
-          //   var scrollPosition = window.scrollY;
-          //   var div = document.getElementById("buycar");
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      </script>
+      <!-- 滾動 -->
+      <script>
+        // window.onscroll = function () {
+        //   var scrollPosition = window.scrollY;
+        //   var div = document.getElementById("buycar");
 
-          //   // 設置一個滾動距離的閾值
-          //   var threshold = 800;  // 你可以根據需要調整此值
+        //   // 設置一個滾動距離的閾值
+        //   var threshold = 800;  // 你可以根據需要調整此值
 
-          //   // 滾動超過閾值時隱藏按鈕，否則顯示
-          //   if (scrollPosition > threshold) {
-          //     div.style.display = "none";
-          //   } else {
-          //     div.style.display = "block";
-          //   }
-          // // };
-          // window.addEventListener('scroll', function () {
-          //   var scrollPosition = window.scrollY;  // 當前滾動的位置
-          //   var button = document.getElementById('buycar');
+        //   // 滾動超過閾值時隱藏按鈕，否則顯示
+        //   if (scrollPosition > threshold) {
+        //     div.style.display = "none";
+        //   } else {
+        //     div.style.display = "block";
+        //   }
+        // // };
+        // window.addEventListener('scroll', function () {
+        //   var scrollPosition = window.scrollY;  // 當前滾動的位置
+        //   var button = document.getElementById('buycar');
 
-          //   if (scrollPosition > 4500) {  // 假設滾動超過300px時隱藏按鈕
-          //     button.classList.add('hidden');
-          //   } else {
-          //     button.classList.remove('hidden');
-          //   }
-          // });
-          window.addEventListener('scroll', function () {
-            var scrollPosition = window.scrollY;  // 當前滾動位置
-            var viewportHeight = window.innerHeight;  // 當前視窗的高度
-            var documentHeight = document.documentElement.scrollHeight;  // 文件總高度
-            var distanceFromBottom = documentHeight - (scrollPosition + viewportHeight);  // 計算滾動到頁面底部的距離
-            var button = document.getElementById('buycar');
+        //   if (scrollPosition > 4500) {  // 假設滾動超過300px時隱藏按鈕
+        //     button.classList.add('hidden');
+        //   } else {
+        //     button.classList.remove('hidden');
+        //   }
+        // });
+        window.addEventListener('scroll', function () {
+          var scrollPosition = window.scrollY;  // 當前滾動位置
+          var viewportHeight = window.innerHeight;  // 當前視窗的高度
+          var documentHeight = document.documentElement.scrollHeight;  // 文件總高度
+          var distanceFromBottom = documentHeight - (scrollPosition + viewportHeight);  // 計算滾動到頁面底部的距離
+          var button = document.getElementById('buycar');
 
-            if (distanceFromBottom < 772) {  // 假設滾動到離底部300px時隱藏按鈕
-              button.classList.add('hidden');
-            } else {
-              button.classList.remove('hidden');
-            }
-          });
-        </script>
+          if (distanceFromBottom < 772) {  // 假設滾動到離底部300px時隱藏按鈕
+            button.classList.add('hidden');
+          } else {
+            button.classList.remove('hidden');
+          }
+        });
+      </script>
 </body>
 
 </html>

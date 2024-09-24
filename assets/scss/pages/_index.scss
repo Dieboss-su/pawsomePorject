@@ -233,6 +233,10 @@
     border: 1.5px solid #EC5501;
     color: #EC5501;
   }
+  &.active{
+    border: 1.5px solid #EC5501;
+    color: #EC5501;
+  }
   @include md{
     padding: 4px 12px 4px 12px;
     height:auto;
@@ -243,6 +247,10 @@
       font-weight: 500;
     }
     &:focus{
+      border: 2.5px solid #EC5501;
+      color: #EC5501;
+    }
+    &.active{
       border: 2.5px solid #EC5501;
       color: #EC5501;
     }
@@ -447,3 +455,15 @@
   pointer-events: none;
 }
 
+.fixed-p{
+  padding-top: 62px;
+  @include md{
+    padding-top: 72px;
+  }
+}
+
+.swiper-button-disabled{
+  span{
+    color: #BBBBBB !important;
+  }
+}
