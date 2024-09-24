@@ -207,6 +207,13 @@
     border: 2.5px solid #EC5501;
     color: #EC5501;
   }
+  .btn-check:disabled + .modal-btn{
+    background: #F0F0F0;
+    color: #BBBBBB;
+    span{
+      color: #BBBBBB !important;
+    }
+  }
 }
 
 .sm-card{
@@ -215,6 +222,7 @@
   border: 1px solid #F0F0F0;
   border-radius: 8px;
   overflow: hidden;
+  height: 100%;
 }
 .card-btn{
   height: 44px;
