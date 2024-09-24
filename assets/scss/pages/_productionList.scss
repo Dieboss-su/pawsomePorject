@@ -96,11 +96,15 @@
   }
 
   .swiper-slide {
-    max-width: 250px;
-    height: 401.5px;
+    max-width: 150px;
+    height: 340px;
     font-size: 16px;
     background: #fff;
     border-radius: 8px;
+    @include md {
+      max-width: 250px;
+      height: 401.5px;
+    }
   }
   .swiper-slide img {
     display: block;
