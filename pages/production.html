@@ -1484,16 +1484,17 @@
               },
             },
           });
-          var swiper2 = new Swiper(".thumbs-Swiper-2", {
-            spaceBetween: 16,
+          var swiper2 = new Swiper(".comment-swiper", {
+            spaceBetween: 8,
+            slidesPerView: '2.05',
             // navigation: {
             //   nextEl: ".swiper-button-next",
             //   prevEl: ".swiper-button-prev",
             // },
             breakpoints: {
-              992: {
+              768: {
                 //当屏幕宽度大于等于1280
-                spaceBetween: 24,
+                slidesPerView: '4.1',
               },
             },
             thumbs: {
