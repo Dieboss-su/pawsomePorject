@@ -231,3 +231,10 @@
 // .production-bottom-btn:active:focus {
 //   box-shadow: none !important; /* 即使 focus 也不顯示 shadow */
 // }
+
+.production-bottom-btn.active {
+  outline: 2px solid #ec5501 !important;
+  box-shadow: none !important;
+  background: #ffff;
+  color: #ec5501;
+}
