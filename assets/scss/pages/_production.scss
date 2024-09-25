@@ -214,14 +214,20 @@
   background: #fff2eb;
   color: #ec5501;
 }
+// .production-bottom-btn:focus {
+//   outline: 1px solid #ec5501;
+//   background: #ffff;
+//   box-shadow: 0 0px 0px 2px #ffe0cc;
+//   color: #ec5501;
+// }
+.production-bottom-btn:active,
 .production-bottom-btn:focus {
-  outline: 1px solid #ec5501;
-  background: #ffff;
-  box-shadow: 0 0px 0px 2px #ffe0cc;
-  color: #ec5501;
-}
-.production-bottom-btn:active {
-  outline: 1.5px solid #ec5501;
+  outline: 2px solid #ec5501 !important;
+  box-shadow: none !important;
   background: #ffff;
   color: #ec5501;
 }
+
+// .production-bottom-btn:active:focus {
+//   box-shadow: none !important; /* 即使 focus 也不顯示 shadow */
+// }
