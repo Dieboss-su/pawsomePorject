@@ -201,3 +201,27 @@
 //       object-fit: cover;
 //     }
 //   }
+.production-bottom-btn {
+  padding: 4px 12px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.production-bottom-btn:hover {
+  outline: 1px solid #ec5501;
+  background: #fff2eb;
+  color: #ec5501;
+}
+.production-bottom-btn:focus {
+  outline: 1px solid #ec5501;
+  background: #ffff;
+  box-shadow: 0 0px 0px 2px #ffe0cc;
+  color: #ec5501;
+}
+.production-bottom-btn:active {
+  outline: 1.5px solid #ec5501;
+  background: #ffff;
+  color: #ec5501;
+}
