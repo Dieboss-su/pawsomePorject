@@ -49,6 +49,30 @@
 .production-modal-taste-btn.show {
   border: 2.5px solid #ec5501;
   color: #ec5501;
+  background-color: #fff;
+}
+
+.production-modal-speci-btn:hover,
+.production-modal-taste-btn:hover {
+  border: 1px solid #ec5501;
+  color: #ec5501;
+  background: #fff2eb;
+}
+
+/* 確保 active 和 checked 狀態不被 hover 覆蓋 */
+.btn-check:checked + .production-modal-speci-btn:hover,
+.btn-check:checked + .production-modal-taste-btn:hover,
+:not(.btn-check) + .production-modal-speci-btn:active:hover,
+:not(.btn-check) + .production-modal-taste-btn:active:hover,
+.production-modal-speci-btn:first-child:active:hover,
+.production-modal-taste-btn:first-child:active:hover,
+.production-modal-speci-btn.active:hover,
+.production-modal-taste-btn.active:hover,
+.production-modal-speci-btn.show:hover,
+.production-modal-taste-btn.show:hover {
+  border: 2.5px solid #ec5501;
+  color: #ec5501;
+  background-color: #fff2eb;
 }
 .production-card {
   box-shadow: 0 4.15px 12.46px -2.08px rgba(24, 39, 75, 0.08),
