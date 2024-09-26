@@ -25,7 +25,8 @@
 .catStapleFood-card-btn {
   height: 44px;
   width: 44px;
-  border: 1px solid #bbbbbb;
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  border: 2.5px solid transparent;
   background: white;
   border-radius: 8px;
 
@@ -36,12 +37,14 @@
     border: 1.5px solid #ec5501;
     color: #ec5501;
     font-weight: 500;
+    box-shadow: none;
   }
 
   @include md {
     padding: 4px 12px 4px 12px;
     height: 30px;
     width: auto;
+    box-shadow: 0 0 1px 1px #bbbbbb;
 
     &:hover,
     &:focus,
@@ -50,6 +53,7 @@
       border: 2.5px solid #ec5501;
       color: #ec5501;
       font-weight: 500;
+      box-shadow: none;
     }
   }
 }

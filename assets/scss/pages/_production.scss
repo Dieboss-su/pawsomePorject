@@ -21,7 +21,8 @@
 .production-modal-taste-btn {
   padding: 15px 12px 15px 12px;
   min-height: 56px;
-  border: 1px solid #bbbbbb;
+  border: 2.5px solid transparent;
+  box-shadow: 0 0 1px 1px #bbbbbb;
   font-weight: 500;
   border-radius: 12px;
   cursor: pointer;
@@ -31,7 +32,8 @@
   min-height: 56px;
   min-width: 95px;
   padding: 5.5px 0;
-  border: 1px solid #bbbbbb;
+  border: 2.5px solid transparent;
+  box-shadow: 0 0 1px 1px #bbbbbb;
   font-weight: 500;
   font-size: 16px;
   border-radius: 12px;
@@ -50,6 +52,7 @@
   border: 2.5px solid #ec5501;
   color: #ec5501;
   background-color: #fff;
+  box-shadow: none;
 }
 
 .production-modal-speci-btn:hover,
@@ -57,6 +60,7 @@
   border: 1px solid #ec5501;
   color: #ec5501;
   background: #fff2eb;
+  box-shadow: none;
 }
 
 /* 確保 active 和 checked 狀態不被 hover 覆蓋 */
@@ -73,6 +77,7 @@
   border: 2.5px solid #ec5501;
   color: #ec5501;
   background-color: #fff2eb;
+  box-shadow: none;
 }
 .production-card {
   box-shadow: 0 4.15px 12.46px -2.08px rgba(24, 39, 75, 0.08),
@@ -93,7 +98,7 @@
   .nav-link:hover,
   .nav-link:focus,
   .nav-link:active {
-    color: $primary-300;
+    color: #ec5501;
     font-weight: $font-weight-medium;
   }
   @include md {
@@ -122,31 +127,36 @@
   border-radius: 10px;
 }
 
-.btn-outline-primary {
-  color: #212121;
-  border-color: #bbbbbb;
-  border-width: 1px;
-  border-radius: 1000px;
-  height: 40px;
-  width: 80px;
-}
+.btn-outline-primary,
 .btn-outline-special {
   color: #212121;
   border-color: #bbbbbb;
   border-width: 1px;
   border-radius: 1000px;
   height: 40px;
+}
+
+/* 各自的寬度 */
+.btn-outline-primary {
+  width: 80px;
+}
+
+.btn-outline-special {
   width: 96px;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-primary:active,
-.btn-outline-primary:checked,
-.btn-outline-special:hover,
-.btn-outline-special:active,
-.btn-outline-special:checked {
+/* 狀態樣式合併 */
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:active,
+.btn.btn-outline-primary:checked,
+.btn.btn-outline-special:hover,
+.btn.btn-outline-special:active,
+.btn.btn-outline-special:checked,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-special:focus {
   background-color: #ec5501;
   color: white;
+  border: none;
 }
 
 .btn-check:checked + .btn,
