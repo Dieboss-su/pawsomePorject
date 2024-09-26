@@ -21,7 +21,7 @@
     <main style="padding-top: 74px">
       <div class="container">
         <!-- 麵包屑 -->
-        <section class="py-7">
+        <section class="pt-5 pb-5">
           <nav aria-label="breadcrumb pb-5">
             <ol class="breadcrumb root-text py-2">
               <li class="breadcrumb-item">
@@ -163,19 +163,19 @@
                 href="#"
                 class="position-absolute top-50 end-0 translate-middle"
               >
-                <i
-                  class="bi bi-chevron-down text-neutral-800 bg-transparent list-icon-20"
-                ></i>
+                <span
+                  class="material-symbols-outlined list-icon-20 text-neutral-800 d-flex align-items-center justify-content-center"
+                >
+                  keyboard_arrow_down
+                </span>
               </a>
             </div>
           </form>
           <button
-            class="btn btn-sm border-primary-400 text-primary-400 fs-2"
+            class="btn most-btn border-primary-300 text-primary-300 fs-2 d-flex align-items-center px-4 py-2 fw-medium"
             style="height: 30px; white-space: nowrap"
           >
-            最相關<span
-              class="ps-2 material-symbols-outlined fs-3 align-middle"
-            >
+            最相關<span class="ps-2 material-symbols-outlined fs-2">
               filter_list
             </span>
           </button>
@@ -186,11 +186,10 @@
         >
           <h6 class="fw-medium">符合配對的商品結果 12 筆</h6>
           <button
-            class="btn border-primary-400 text-primary-400 d-lg-flex d-none"
+            class="btn most-btn border-primary-300 text-primary-300 d-lg-flex d-none d-flex align-items-center px-4 py-2 fw-medium"
+            style="height: 30px; white-space: nowrap"
           >
-            最相關<span
-              class="ps-2 material-symbols-outlined fs-5 align-middle"
-            >
+            最相關<span class="ps-2 material-symbols-outlined fs-2">
               filter_list
             </span>
           </button>
@@ -200,64 +199,65 @@
           <div class="row g-5">
             <div class="col-6 col-md-3">
               <div class="catStapleFood-card">
-                <a href="production.html">
-                  <div
-                    class="position-relative border-1 border-bottom border-neutral-100"
-                  >
+                <div
+                  class="position-relative border-1 border-bottom border-neutral-100"
+                >
+                  <a href="production.html">
                     <img
                       src="../assets/images/Cat-30.png"
                       alt="歐睿健 六種鮮魚無穀配方 85%優質肉含量 貓顆粒乾糧"
-                    />
-                  </div>
-                  <div class="p-3 p-md-4 pb-5 card-main-height">
-                    <h3 class="catStapleFood-card-h3 mb-2 mb-lg-4">
+                  /></a>
+                </div>
+                <div class="p-3 p-md-4 pb-5 card-main-height">
+                  <a href="production.html"
+                    ><h3 class="catStapleFood-card-h3 mb-2 mb-lg-4">
                       歐睿健 六種鮮魚無穀配方 85%優質肉含量 貓顆粒乾糧
-                    </h3>
-                    <span
-                      class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2"
-                      >4.8
-                      <img
-                        class="ms-1 ms-md-2 me-md-2"
-                        style="width: 16px; height: 16px"
-                        src="../assets/images/icon/colored/Filled_=Yes.png"
-                        alt="黃色星號"
-                      /><span class="fs-1 d-none d-xxl-block text-neutral-600"
-                        >( 1000+ 則評價)</span
-                      ><span class="px-2">‧</span> <span class="me-2">已售</span
-                      ><span class="">3.2萬</span>
-                    </span>
-                    <div class="d-flex align-items-center">
-                      <button
-                        type="button"
-                        class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
-                      >
-                        1kg
-                      </button>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between ps-3">
-                    <div
-                      class="d-flex flex-column flex-md-row align-items-md-center"
-                    >
-                      <span
-                        class="text-neutral-400 fs-1 text-decoration-line-through me-md-2"
-                        >$109</span
-                      >
-                      <span class="text-primary-300 fw-medium">$99</span>
-                    </div>
+                    </h3></a
+                  >
+                  <span
+                    class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2"
+                    >4.8
+                    <img
+                      class="ms-1 ms-md-2 me-md-2"
+                      style="width: 16px; height: 16px"
+                      src="../assets/images/icon/colored/Filled_=Yes.png"
+                      alt="黃色星號"
+                    /><span class="fs-1 d-none d-xxl-block text-neutral-600"
+                      >( 1000+ 則評價)</span
+                    ><span class="px-2">‧</span> <span class="me-2">已售</span
+                    ><span class="">3.2萬</span>
+                  </span>
+                  <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="mt-1 p-4 border-0 bg-neutral-0"
-                      data-bs-toggle="modal"
-                      data-bs-target="#sm-shoop-Modal"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
-                      <img
-                        src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg"
-                        alt=""
-                      />
+                      1kg
                     </button>
                   </div>
-                </a>
+                </div>
+                <div class="d-flex justify-content-between ps-3">
+                  <div
+                    class="d-flex flex-column flex-md-row align-items-md-center"
+                  >
+                    <span
+                      class="text-neutral-400 fs-1 text-decoration-line-through me-md-2"
+                      >$109</span
+                    >
+                    <span class="text-primary-300 fw-medium">$99</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="mt-1 p-4 border-0 bg-neutral-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sm-shoop-Modal"
+                  >
+                    <img
+                      src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
               </div>
             </div>
             <div class="col-6 col-md-3">
@@ -265,15 +265,18 @@
                 <div
                   class="position-relative border-1 border-bottom border-neutral-100"
                 >
-                  <img
-                    src="../assets/images/Cat-26.png"
-                    alt="歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧"
-                  />
+                  <a href="production.html"
+                    ><img
+                      src="../assets/images/Cat-26.png"
+                      alt="歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧"
+                  /></a>
                 </div>
                 <div class="p-3 p-md-4 pb-5 card-main-height">
-                  <h3 class="catStapleFood-card-h3 mb-2 mb-lg-4">
-                    歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧
-                  </h3>
+                  <a href="production.html"
+                    ><h3 class="catStapleFood-card-h3 mb-2 mb-lg-4">
+                      歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧
+                    </h3></a
+                  >
                   <span
                     class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2"
                     >4.6
@@ -290,7 +293,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       25lb
                     </button>
@@ -356,7 +359,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       1kg
                     </button>
@@ -416,7 +419,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       1kg
                     </button>
@@ -476,7 +479,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       1kg
                     </button>
@@ -536,7 +539,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       10lb
                     </button>
@@ -596,7 +599,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       2kg
                     </button>
@@ -668,7 +671,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       7kg
                     </button>
@@ -728,7 +731,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       10lb
                     </button>
@@ -800,7 +803,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       15kg
                     </button>
@@ -876,7 +879,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       20kg
                     </button>
@@ -936,7 +939,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       7kg
                     </button>
@@ -996,7 +999,7 @@
                   <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2"
+                      class="me-2 catStapleFood-card-btn fs-1 fs-md-2 active"
                     >
                       1lb
                     </button>

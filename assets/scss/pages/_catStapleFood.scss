@@ -29,28 +29,37 @@
   background: white;
   border-radius: 8px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     border: 1.5px solid #ec5501;
     color: #ec5501;
     font-weight: 500;
   }
-  &:focus {
-    border: 1.5px solid #ec5501;
-    color: #ec5501;
-  }
+
   @include md {
     padding: 4px 12px 4px 12px;
     height: 30px;
     width: auto;
-    &:hover {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       border: 2.5px solid #ec5501;
       color: #ec5501;
       font-weight: 500;
     }
-    &:focus {
-      border: 2.5px solid #ec5501;
-      color: #ec5501;
-    }
+  }
+}
+.catStapleFood-card-btn.active:hover {
+  border: 1.5px solid #ec5501;
+  color: #ec5501;
+  font-weight: 500;
+
+  @include md {
+    border: 2.5px solid #ec5501;
   }
 }
 
@@ -72,4 +81,19 @@
     color: $primary-300;
     background-color: $primary-0;
   }
+  .nav-link.active {
+    color: $primary-300;
+    background-color: $primary-0;
+  }
+}
+.most-btn {
+  color: #ec5501;
+  background-color: white;
+  border-color: #ec5501;
+}
+button.most-btn:checked,
+button.most-btn:hover,
+button.most-btn:focus {
+  color: white !important;
+  background-color: #ec5501;
 }
