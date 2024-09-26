@@ -1368,6 +1368,7 @@
             loop: false,
           });
         </script>
+        <!-- btn的script -->
          <script>
           // 獲取所有按鈕組
           const btnGroups = document.querySelectorAll('.btn-group');
@@ -1385,6 +1386,22 @@
                 // 為當前被點擊的按鈕添加 active 類
                 this.classList.add('active');
               });
+            });
+          });
+        </script>
+        <!-- nav-link的script -->
+        <script>
+          // 獲取所有的 nav-link
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          // 遍歷所有的 nav-link，為每個添加點擊事件
+          navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+              event.preventDefault(); // 防止鏈接的默認跳轉行為
+              // 移除所有 nav-link 的 active 類
+              navLinks.forEach(l => l.classList.remove('active'));
+              // 為當前被點擊的元素添加 active 類
+              this.classList.add('active');
             });
           });
         </script>
