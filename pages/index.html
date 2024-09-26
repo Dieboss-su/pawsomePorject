@@ -239,15 +239,15 @@
                     <h4 class="fw-normal fs-3 mb-3">規格</h4>
                     <div class="d-flex mb-5 mb-lg-6 flex-wrap gap-3">
                       <input type="radio" class="btn-check" name="size" id="size-1" autocomplete="off" checked>
-                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap"
-                        for="size-1 ">4磅(袋)<span class="text-neutral-500 fs-1">$280/磅</span></label>
-                      <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" checked disabled>
+                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-1">4磅(袋)<span
+                          class="text-neutral-500 fs-1">$280/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" disabled>
                       <label class="modal-btn d-flex flex-column align-items-center text-nowrap"
                         for="size-2">4磅x2(袋)<span class="text-neutral-500 fs-1">完售</span></label>
-                      <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off" checked>
+                      <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off">
                       <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-3">7磅(袋)<span
                           class="text-neutral-500 fs-1">$244/磅</span></label>
-                      <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off" checked>
+                      <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off">
                       <label class="modal-btn d-flex flex-column align-items-center text-nowrap"
                         for="size-4">12磅(袋)<span class="text-neutral-500 fs-1">$210/磅</span></label>
                     </div>
@@ -256,7 +256,7 @@
                       <input type="radio" class="btn-check" name="plan" id="plan-1" autocomplete="off" checked>
                       <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-1">$ 598<span
                           class="text-neutral-500 fs-1">非會員</span></label>
-                      <input type="radio" class="btn-check" name="plan" id="plan-2" autocomplete="off" checked>
+                      <input type="radio" class="btn-check" name="plan" id="plan-2" autocomplete="off">
                       <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-2">$ 398<span
                           class="text-neutral-500 fs-1">會員現折 200</span></label>
                     </div>
@@ -519,6 +519,12 @@
                       </button>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-slide d-md-none flex-row align-items-center " style="background: none;">
+                  <span class="py-2 px-4 fw-medium text-secondary-400"><a class="fs-2 " href="#">更多</a><span
+                      class="material-symbols-outlined fs-3 ms-2 align-middle">
+                      chevron_right
+                    </span></span>
                 </div>
               </div>
             </div>
@@ -10615,17 +10621,30 @@
         var swiper = new Swiper(".index-swiper-1", {
           spaceBetween: 16,
           // slidesPerView: 'auto'
-          slidesOffsetAfter: -800,
+          slidesOffsetAfter: -1200,
           navigation: {
             nextEl: '.swiper-button-next-1',
             prevEl: '.swiper-button-prev-1',
           },
           breakpoints: {
+
             400: {
-              slidesOffsetAfter: -1100,
+              slidesOffsetAfter: -1400,
+            },
+            425: {
+              slidesOffsetAfter: -1500,
+            },
+            450: {
+              slidesOffsetAfter: -1700,
+            },
+            475: {
+              slidesOffsetAfter: -1800,
             },
             500: {
-              slidesOffsetAfter: -1500,
+              slidesOffsetAfter: -2000,
+            },
+            650: {
+              slidesOffsetAfter: -2000,
             },
             768: {  //当屏幕宽度大于等于768 
               slidesOffsetAfter: -2000,
