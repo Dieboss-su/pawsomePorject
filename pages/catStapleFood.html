@@ -1636,7 +1636,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link chevron-right"
                 aria-current="page"
                 href="#"
                 onclick="this.blur(); return false;"
@@ -1769,6 +1769,7 @@
         },
       });
     </script>
+    <!-- btn的script -->
     <script>
       // 獲取所有按鈕組
       const btnGroups = document.querySelectorAll(".btn-group");
@@ -1787,6 +1788,41 @@
             this.classList.add("active");
           });
         });
+      });
+    </script>
+    <!-- catStapleFood-page-nav的script -->
+    <script>
+      // 獲取所有的 nav-link
+      const links = document.querySelectorAll(".nav-link");
+      const chevronRight = document.querySelector(".chevron-right");
+
+      // 遍歷所有的 nav-link，為其添加點擊事件來切換 active 類
+      links.forEach((link) => {
+        link.addEventListener("click", function () {
+          // 如果點擊的是 chevron_right，則不執行該邏輯
+          if (!this.classList.contains("chevron-right")) {
+            // 移除所有 nav-link 的 active 類
+            links.forEach((l) => l.classList.remove("active"));
+            // 為當前被點擊的元素添加 active 類
+            this.classList.add("active");
+          }
+        });
+      });
+
+      // 點擊 chevron_right，移到下一個項目
+      chevronRight.addEventListener("click", function () {
+        // 找到當前 active 的項目
+        const currentActive = document.querySelector(".nav-link.active");
+        // 獲取當前 active 項目的索引
+        const currentIndex = Array.from(links).indexOf(currentActive);
+
+        // 檢查是否已到最後一個有效的項目（"..." 之前的項目）
+        if (currentIndex >= 0 && currentIndex < links.length - 3) {
+          // 移除當前 active
+          currentActive.classList.remove("active");
+          // 將下一個項目設置為 active
+          links[currentIndex + 1].classList.add("active");
+        }
       });
     </script>
   </body>
