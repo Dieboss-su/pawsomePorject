@@ -1298,25 +1298,41 @@
 
         <!-- Initialize Swiper -->
         <!-- 縮略圖 -->
-        <script>
-          var swiper = new Swiper(".thumbs-Swiper", {
-            spaceBetween: 12,
-            slidesPerView: 5,
-            freeMode: true,
-            watchSlidesProgress: true,
-            breakpoints: {
-              992: {
-                //当屏幕宽度大于等于1280
-                spaceBetween: 12,
-                slidesPerView: 3.5,
-                slidesOffsetBefore: 100,
-                navigation: {
-                  nextEl: ".swiper-button-next-2",
-                  prevEl: ".swiper-button-prev-2",
-                },
+      <script>
+        var swiper = new Swiper(".thumbs-Swiper", {
+          spaceBetween: 12,
+          slidesPerView: 5,
+          freeMode: true,
+          watchSlidesProgress: true,
+          breakpoints: {
+            992: {
+              //当屏幕宽度大于等于1280
+              spaceBetween: 12,
+              slidesPerView: 3.5,
+              slidesOffsetBefore: 100,
+              navigation: {
+                nextEl: ".swiper-button-next-2",
+                prevEl: ".swiper-button-prev-2",
               },
             },
-          });
+          },
+        });
+        var swiper2 = new Swiper(".thumbs-Swiper-2", {
+          spaceBetween: 16,
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+          breakpoints: {
+            992: {
+              //当屏幕宽度大于等于1280
+              spaceBetween: 24,
+            },
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
           var swiper2 = new Swiper(".comment-swiper", {
             spaceBetween: 8,
             slidesPerView: '2.05',
