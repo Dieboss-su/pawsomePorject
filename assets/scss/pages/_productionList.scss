@@ -142,3 +142,47 @@
 .scroll-hidden::-webkit-scrollbar {
   display: none; /* 針對瀏覽器（如 Chrome、Safari）隱藏滾動條 */
 }
+.productionList-card-btn {
+  height: 44px;
+  width: 44px;
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  border: 2.5px solid transparent;
+  background: white;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border: 1.5px solid #ec5501;
+    color: #ec5501;
+    font-weight: 500;
+    box-shadow: none;
+  }
+
+  @include md {
+    padding: 4px 12px 4px 12px;
+    height: 30px;
+    width: auto;
+    box-shadow: 0 0 1px 1px #bbbbbb;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      border: 2.5px solid #ec5501;
+      color: #ec5501;
+      font-weight: 500;
+      box-shadow: none;
+    }
+  }
+}
+.productionList-card-btn.active:hover {
+  border: 1.5px solid #ec5501;
+  color: #ec5501;
+  font-weight: 500;
+
+  @include md {
+    border: 2.5px solid #ec5501;
+  }
+}
