@@ -141,7 +141,10 @@
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
-.btn-outline-primary:checked {
+.btn-outline-primary:checked,
+.btn-outline-special:hover,
+.btn-outline-special:active,
+.btn-outline-special:checked {
   background-color: #ec5501;
   color: white;
 }
@@ -152,7 +155,7 @@
 .btn.active,
 .btn.show,
 .btn.hover {
-  color: var(--bs-btn-active-color);
+  color: white;
   background-color: #ec5501;
   border-color: #ec5501;
 }
