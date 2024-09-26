@@ -21,6 +21,8 @@ h1, .h1{
 }
 
 .section-container{
+    margin-left: auto;
+    margin-right: auto;
     @include md{
         max-width: 720px;
     }
@@ -29,5 +31,14 @@ h1, .h1{
     }
     @include xxl{
         max-width: 1128px;
+    }
+}
+.input-hover:hover{
+    border: 2px solid #CC4900 ; 
+}
+.input-w{
+    width: 100%;
+    @include md{
+        width: 40%;
     }
 }
