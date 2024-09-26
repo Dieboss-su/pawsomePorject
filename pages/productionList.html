@@ -407,12 +407,12 @@
                             </div>
                           </div>
                         </div>
-                        <div class="swiper-slide d-md-none flex-row align-items-center " style="background: none;">
+                        <!-- <div class="swiper-slide d-md-none flex-row align-items-center " style="background: none;">
                           <span class="py-2 px-4 fw-medium text-primary-300 "><a class="fs-2 " href="#">更多</a><span
                               class="material-symbols-outlined fs-3 ms-2 align-middle">
                               chevron_right
                             </span></span>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -1520,7 +1520,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">3萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -1555,7 +1555,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 950 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">2萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           1.5 kg
                         </button>
@@ -1628,7 +1628,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 857 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">1.5萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           2kg
                         </button>
@@ -1667,7 +1667,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 1000+ 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">4萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -1765,7 +1765,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
                         <span class="me-2 fs-md-1">已售</span><span class="">1萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           7 kg
                         </button>
@@ -1799,7 +1799,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 350 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2 fs-md-1">已售</span><span class="">575</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           1.5 kg
                         </button>
@@ -1868,7 +1868,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 875 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2 fs-md-1">已售</span><span class="">1.5萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           8kg
                         </button>
@@ -1908,7 +1908,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 1000+ 則評價)</span><span class="px-2">‧</span>
                         <span class="me-2 fs-md-1">已售</span><span class="">4萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 me-md-3 productionList-card-btn fs-1 fs-md-2 active">
                           8kg
                         </button>
@@ -2357,6 +2357,27 @@
             // }
             // watchSlidesProgress: true,
             // loop: true,
+          });
+        </script>
+        <!-- productionList-card-btn -->
+        <script>
+          // 獲取所有按鈕組
+          const btnGroups = document.querySelectorAll('.btn-group');
+      
+          // 遍歷每組按鈕
+          btnGroups.forEach((group) => {
+            // 獲取每組內的所有按鈕
+            const buttons = group.querySelectorAll('.productionList-card-btn');
+      
+            // 遍歷每個按鈕，為其添加點擊事件
+            buttons.forEach((button) => {
+              button.addEventListener('click', function() {
+                // 先移除該組內所有按鈕的 active 類
+                buttons.forEach(btn => btn.classList.remove('active'));
+                // 為當前被點擊的按鈕添加 active 類
+                this.classList.add('active');
+              });
+            });
           });
         </script>
 
