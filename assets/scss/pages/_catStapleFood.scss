@@ -26,7 +26,7 @@
   height: 44px;
   width: 44px;
   box-shadow: 0 0 1px 1px #bbbbbb;
-  border: 2.5px solid transparent;
+  border: 1.5px solid transparent;
   background: white;
   border-radius: 8px;
 
@@ -44,6 +44,7 @@
     padding: 4px 12px 4px 12px;
     height: 30px;
     width: auto;
+    border: 2.5px solid transparent;
     box-shadow: 0 0 1px 1px #bbbbbb;
 
     &:hover,

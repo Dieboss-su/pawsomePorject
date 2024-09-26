@@ -77,16 +77,20 @@
   }
 
   .swiper-slide {
-    max-width: 250px;
-    height: 372.5px;
+    max-width: 150px;
+    height: 300px;
     font-size: 16px;
     background: #fff;
     border-radius: 8px;
-  }
-  .swiper-slide img {
-    display: block;
-    height: 100%;
-    object-fit: cover;
+    @include md {
+      max-width: 250px;
+      height: 372.5px;
+    }
+    .swiper-slide img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 .productionList-swiper-3 {
@@ -144,9 +148,9 @@
 }
 .productionList-card-btn {
   height: 44px;
-  width: 44px;
+
   box-shadow: 0 0 1px 1px #bbbbbb;
-  border: 2.5px solid transparent;
+  border: 1.5px solid transparent;
   background: white;
   border-radius: 8px;
 
@@ -165,6 +169,9 @@
     height: 30px;
     width: auto;
     box-shadow: 0 0 1px 1px #bbbbbb;
+    border: 2.5px solid transparent;
+    display: flex;
+    align-items: center;
 
     &:hover,
     &:focus,
