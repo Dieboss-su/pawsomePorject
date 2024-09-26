@@ -643,7 +643,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 12則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">541</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -685,7 +685,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 24則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">872</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -727,7 +727,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 5則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">24</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -769,7 +769,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 4則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">204</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           牛肉
                         </button>
@@ -811,7 +811,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 875則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">1.5萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           10lb
                         </button>
@@ -936,7 +936,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">2.5萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           15kg
                         </button>
@@ -1056,7 +1056,7 @@
                           class="fs-1 d-none d-md-block text-neutral-600">( 950則評價)</span><span class="px-2">‧</span>
                         <span class="me-2">已售</span><span class="">2萬</span>
                       </span>
-                      <div class="d-flex align-items-center">
+                      <div class="btn-group d-flex align-items-center">
                         <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
                           2kg
                         </button>
@@ -1366,6 +1366,26 @@
               },
             },
             loop: false,
+          });
+        </script>
+         <script>
+          // 獲取所有按鈕組
+          const btnGroups = document.querySelectorAll('.btn-group');
+      
+          // 遍歷每組按鈕
+          btnGroups.forEach((group) => {
+            // 獲取每組內的所有按鈕
+            const buttons = group.querySelectorAll('.production-bottom-btn');
+      
+            // 遍歷每個按鈕，為其添加點擊事件
+            buttons.forEach((button) => {
+              button.addEventListener('click', function() {
+                // 先移除該組內所有按鈕的 active 類
+                buttons.forEach(btn => btn.classList.remove('active'));
+                // 為當前被點擊的按鈕添加 active 類
+                this.classList.add('active');
+              });
+            });
           });
         </script>
 </body>
