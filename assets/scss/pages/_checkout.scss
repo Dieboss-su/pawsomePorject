@@ -117,3 +117,17 @@
         max-width: 160px;
     }
 }
+.side-blur{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 100%;
+        filter: blur(15px);
+        right: -20px;
+        top: 0;
+        background: white;
+        z-index: 100;
+    }
+}

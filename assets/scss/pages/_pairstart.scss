@@ -157,6 +157,7 @@
       .btn-check:checked + .input-btn, :not(.btn-check) + .input-btn:active, .input-btn:first-child:active, .input-btn.active, .input-btn.show{
         border: 2px solid #EC5501;
         color: #EC5501;
+        background: #FFF2EB;
       }
 }
 .rotate-180{
