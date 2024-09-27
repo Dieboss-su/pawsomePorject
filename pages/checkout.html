@@ -15,7 +15,7 @@
 
 <body style="background: #F0F0F0;">
     <%- include('./layout/header'); -%>
-        <div class="checkout-start mx-auto container-fluid" style="padding-top: 74px; max-width: 1440px;">
+        <div class="checkout-start mx-auto container-fluid px-0 px-md-4" style="padding-top: 74px; max-width: 1440px;">
             <header class="my-6 my-md-0">
                 <div class="container checkout-header px-md-0 px-5 py-4 py-md-7">
                     <div class="d-flex justify-content-md-center justify-content-between">
@@ -24,7 +24,7 @@
                                 class="checkout-number bg-neutral-800 me-3 d-flex align-items-center justify-content-center">
                                 <span>1</span>
                             </div>
-                            <span class="fs-4 fw-medium fs-md-3 text-nowrap">查看購物車</span>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">查看購物車</span>
                         </div>
                         <span class="material-symbols-outlined me-md-8">
                             chevron_right
@@ -34,7 +34,7 @@
                                 class="checkout-number bg-neutral-400 me-md-3 d-flex align-items-center justify-content-center">
                                 <span>2</span>
                             </div>
-                            <span class="fs-4 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單確認</span>
+                            <span class="fs-2 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單確認</span>
                         </div>
                         <span class="material-symbols-outlined me-md-8">
                             chevron_right
@@ -44,7 +44,7 @@
                                 class="checkout-number bg-neutral-400 me-md-3 d-flex align-items-center justify-content-center">
                                 <span>3</span>
                             </div>
-                            <span class="fs-4 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單結算</span>
+                            <span class="fs-2 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單結算</span>
                         </div>
                     </div>
                 </div>
@@ -492,7 +492,7 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <div class="bg-neutral-0 rounded-md-2 p-5 d-none d-md-block d-lg-none">
+                            <div class="bg-neutral-0 rounded-md-2 p-5 d-md-block d-lg-none">
                                 <div class="">
                                     <div class="py-4 border-bottom border-neutral-100">
                                         <div class="d-flex justify-content-md-between">
@@ -502,10 +502,10 @@
                                             </div>
                                             <div class="d-flex justify-content-between w-100">
                                                 <div class="d-flex flex-column w-100">
-                                                    <div class="me-3">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">歐睿健 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)</h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class="text-nowrap rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                         <p class="fs-1 d-flex align-items-center text-success-400">
@@ -518,33 +518,14 @@
                                                                 930</span>
                                                             <span class="fw-medium fs-2">$ 791</span>
                                                         </div>
-                                                        <div class="w-100 border border-neutarl-400 d-md-none d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="d-md-flex d-none w-100  border border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="d-flex w-100  border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -576,10 +557,10 @@
                                             </div>
                                             <div class="d-flex justify-content-md-between w-100">
                                                 <div class="d-flex flex-column w-100">
-                                                    <div class="me-3">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">西莎 犬用精緻乾糧 澳洲牛肉與低敏鮭魚(1公斤) (狗飼料)</h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                         <p class="fs-1 d-flex align-items-center text-danger-500">
@@ -592,33 +573,14 @@
                                                                 520</span>
                                                             <span class="fw-medium fs-2">$ 470</span>
                                                         </div>
-                                                        <div class="w-100  border d-md-none border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="w-100 d-none d-md-flex border border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="w-100 d-flex border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -650,10 +612,10 @@
                                             </div>
                                             <div class="d-flex justify-content-md-between w-100">
                                                 <div class="d-flex w-100 flex-column">
-                                                    <div class="me-3">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">艾可 1.5mm極細豆腐貓砂7L 活性炭(1入)</h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class=" rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                         <p class="fs-1 d-flex align-items-center text-danger-500">
@@ -666,33 +628,14 @@
                                                                 335</span>
                                                             <span class="fw-medium fs-2">$ 249</span>
                                                         </div>
-                                                        <div class="w-100 border d-md-none border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="w-100 d-none d-md-flex border border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="w-100  d-flex border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -724,10 +667,10 @@
                                             </div>
                                             <div class="d-flex justify-content-between w-100">
                                                 <div class="d-flex w-100 flex-column">
-                                                    <div class="me-3">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">尾巴與我 Tails&me 經典尼龍帶 基本款胸背帶 深紫灰紫(L)</h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class=" rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                     </div>
@@ -738,33 +681,14 @@
                                                                 730</span>
                                                             <span class="fw-medium fs-2">$ 672</span>
                                                         </div>
-                                                        <div class="w-100 border d-md-none border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="w-100 d-none d-md-flex border border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="w-100 d-none d-md-flex border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -796,11 +720,11 @@
                                             </div>
                                             <div class="d-flex justify-content-between w-100">
                                                 <div class="d-flex w-100 flex-column">
-                                                    <div class="me-3">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">KitCat 呼嚕嚕肉泥 15公克/4入 雞肉+纖維素(化毛配方) (貓零食)
                                                         </h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                     </div>
@@ -811,33 +735,14 @@
                                                                 85</span>
                                                             <span class="fw-medium fs-2">$ 49</span>
                                                         </div>
-                                                        <div class="w-100 border d-md-none border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="w-100 d-none d-md-flex border border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -868,11 +773,12 @@
                                                     alt="歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)">
                                             </div>
                                             <div class="d-flex justify-content-between w-100">
-                                                <div class="d-flex w-100 flex-column">
-                                                    <div class="me-3">
+                                                <div
+                                                    class="d-flex w-100 flex-column d-flex flex-column align-items-start">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
                                                         <h4 class="fs-2 mb-2">歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)</h4>
                                                         <div
-                                                            class="py-2 rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
                                                             <span class="fs-2 fw-medium">500 g</span>
                                                         </div>
                                                         <p class="fs-1 d-flex align-items-center text-danger-500">
@@ -885,33 +791,14 @@
                                                                 2200</span>
                                                             <span class="fw-medium fs-2">$ 1760</span>
                                                         </div>
-                                                        <div class="w-100 border d-md-none border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                            style="max-width: 91px;">
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
-                                                                <span
-                                                                    class="material-symbols-outlined fs-3 text-neutral-400 ">
-                                                                    remove
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
-                                                                1</div>
-                                                            <div
-                                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
-                                                                <span class="material-symbols-outlined fs-3">
-                                                                    add
-                                                                </span>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-between align-items-end">
-                                                    <span class="material-symbols-outlined">
+                                                    <span class="material-symbols-outlined p-4">
                                                         delete
                                                     </span>
-                                                    <div class="w-100 border d-none d-md-flex border-neutarl-400 d-flex rounded-3 overflow-hidden"
-                                                        style="max-width: 91px;">
+                                                    <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
                                                         <div
                                                             class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
                                                             <span
@@ -967,7 +854,7 @@
                         <div class="col-md-9">
                             <div class="bg-neutral-0 p-5 p-md-6 rounded-2">
                                 <div class="d-flex">
-                                    <h6 class="" style="align-self: center">推薦加購區</h6>
+                                    <h6 class="fs-4 fs-md-6" style="align-self: center">推薦加購區</h6>
                                     <div class="d-none d-md-flex position-static ms-auto">
                                         <div class="swiper-button-prev-1 p-4 me-4">
                                             <span class="material-symbols-outlined text-neutral-800">
@@ -1007,7 +894,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1035,7 +922,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1063,7 +950,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1092,7 +979,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1121,7 +1008,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1150,7 +1037,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1179,7 +1066,7 @@
                                                         <div
                                                             class="border border-primary-300 rounded-full text-center py-2 py-md-3">
                                                             <a href="#"
-                                                                class="d-block text-primary-300 fw-medium">我要加購</a>
+                                                                class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
                                                         </div>
                                                     </div>
                                                 </div>

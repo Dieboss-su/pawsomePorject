@@ -25,6 +25,7 @@
     //     width: 96px;
     //   height: 96px;
     //   }
+    cursor: pointer;
     width: 64px;
     height: 94px;
     @include md{
@@ -150,12 +151,17 @@
         font-size: 16px;
         border-radius: 1000px;
         cursor: pointer;
+        &:hover{
+          border: 1px solid #EC5501;
+          color: #EC5501;
+          background: #FFF2EB;
+        }
         @include md{
           font-size: 16px;
         }
       }
       .btn-check:checked + .input-btn, :not(.btn-check) + .input-btn:active, .input-btn:first-child:active, .input-btn.active, .input-btn.show{
-        border: 2px solid #EC5501;
+        border: 1px solid #EC5501;
         color: #EC5501;
         background: #FFF2EB;
       }

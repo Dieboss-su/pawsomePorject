@@ -31,7 +31,7 @@
 }
 
 .checkout-card-btn{
-    max-width: 60px;
+    padding: 4px 12px;
     border: 2.5px solid #EC5501;
 }
 .checkout-header{
@@ -102,6 +102,9 @@
     &:hover{
         background: #EC5501;
     }
+    &.active{
+        background: #EC5501;
+    }
 }
 .checkouting-btn{
     border: 1px #EC5501 solid;
@@ -109,6 +112,12 @@
     &:hover{
         background: #EC5501;
         color: #fff;
+    }
+    @include s-md{
+        &.active{
+        background: #EC5501;
+        color: #fff;
+        }
     }
 }
 .aria-phone{
@@ -129,5 +138,42 @@
         top: 0;
         background: white;
         z-index: 100;
+    }
+}
+.offer-side-blur{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 100%;
+        filter: blur(15px);
+        right: -20px;
+        top: 0;
+        background: #ECFFFE;
+        z-index: 100;
+    }
+}
+.hot-side-blur{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 100%;
+        filter: blur(15px);
+        right: -20px;
+        top: 0;
+        background: #FFF2EB;
+        z-index: 100;
+    }
+}
+.checkout-ing .form-check-input:checked, .checkout-ing :not(.btn-check) + .form-check-input:active, .checkout-ing .form-check-input:first-child:active, .checkout-ing .form-check-input.active, .checkout-ing .form-check-input.show {
+    border: 1px solid #EC5501;
+    background-color: #EC5501;
+    box-shadow: none;
+    font-weight: 500;
+    &.store-btn{
+        background: #EC5501;
     }
 }
