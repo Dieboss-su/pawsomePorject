@@ -15,10 +15,10 @@
 
 <body style="background: #F0F0F0;">
     <%- include('./layout/header'); -%>
-        <div class="checkout-ing mx-auto container-fluid" style="padding-top: 74px; max-width: 1440px;">
-            <header class="my-6 my-md-0">
-                <div class="container px-md-0 px-5 py-4 py-md-7">
-                    <div class="d-flex justify-content-md-center justify-content-between">
+        <div class="checkout-ing mx-auto container-fluid fixed-p" style=" max-width: 1440px;">
+            <header class="my-6 my-md-7">
+                <div class="container px-md-0 px-5">
+                    <div class="d-flex justify-content-md-center justify-content-between align-items-center">
                         <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
                             <div
                                 class="checkout-number bg-primary-300 me-3 d-flex align-items-center justify-content-center">
@@ -227,8 +227,9 @@
             ">
                 <form class="needs-validation" novalidate>
                     <div class=" d-flex flex-column">
-                        <div class="form-check me-6 mb-0 d-flex align-items-center">
-                            <input class="form-check-input me-3" type="radio" name="Agree" id="Agree">
+                        <div class="form-check me-6 mb-0 p-0 d-flex align-items-center">
+                            <input class="form-check-input me-3 ms-0 mt-0" style="float: none;" type="radio"
+                                name="Agree" id="Agree">
                             <label class="form-check-label" for="Agree">
                                 我同意接受 <span class="text-decoration-underline">服務條款</span>和 <span
                                     class="text-decoration-underline">隱私政策</span>。
