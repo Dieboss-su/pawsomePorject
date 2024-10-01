@@ -505,7 +505,9 @@
   }
 }
 
-.pair-btn{
+.pair-btn.pair-btn{
+  background: #EC5501;
+  color: white ;
   &:hover{
     background: #AF4204 !important;
   }
