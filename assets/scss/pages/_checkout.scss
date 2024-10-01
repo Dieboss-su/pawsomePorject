@@ -177,3 +177,16 @@
         background: #EC5501;
     }
 }
+
+.s-md-p{
+    @include s-md{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.s-md-m{
+    @include s-md{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
