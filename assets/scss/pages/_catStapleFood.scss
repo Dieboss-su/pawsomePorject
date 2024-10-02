@@ -29,6 +29,9 @@
   border: 1.5px solid transparent;
   background: white;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus,
