@@ -17,6 +17,135 @@
     <%- include('./layout/shoppingCart'); -%>
       <main style="padding-top: 74px">
         <div class="container">
+          <!--購物車 Modal start-->
+          <div class="modal fade " id="sm-shoop-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div
+              class="modal-dialog modal-mw-none vh-100 vw-100 m-0 tf-up d-flex flex-column-reverse modal-dialog-scrollable flex-md-row mx-auto">
+              <div class="modal-content vh-85 sm-modal-rounded my-md-auto">
+                <div class="modal-header modal-header-boder justify-content-center py-2 py-md-5">
+                  <button type="button" class="modal-btn-sm border-0 d-md-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <button type="button" class="btn-close border-0 d-none d-md-block ms-auto" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-0 d-lg-flex p-lg-6 pb-lg-0">
+                  <div class="w-lg-50 overflow-x-hidden scroll-hidden pe-lg-4">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                      class="Swiper thumbs-Swiper-2">
+                      <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                          <img src="../assets/images/modal-2.png" />
+                        </div>
+                        <div class="swiper-slide ">
+                          <img src="../assets/images/modal-3.png" />
+                        </div>
+                        <div class="swiper-slide ">
+                          <img src="../assets/images/modal-1.png" />
+                        </div>
+                        <div class="swiper-slide ">
+                          <img src="../assets/images/modal-4.png" />
+                        </div>
+                        <div class="swiper-slide ">
+                          <img src="../assets/images/modal-5.png" />
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div> -->
+                    </div>
+                    <div class="d-flex justify-content-center position-relative">
+                      <div class="swiper-button-prev-2 d-none d-lg-block p-4  position-absolute"
+                        style="top: 20%; left: 0%;">
+                        <span class="material-symbols-outlined ">
+                          chevron_left
+                        </span>
+                      </div>
+                      <div class="swiper-button-next-2 d-none d-lg-block p-4 position-absolute"
+                        style="top: 20%; left: 90%;"><span class="material-symbols-outlined ">
+                          chevron_right
+                        </span></div>
+                      <div thumbsSlider="" class="thumbs-Swiper Swiper mb-5">
+                        <div class="swiper-wrapper justify-content-center">
+                          <div class="swiper-slide">
+                            <img src="../assets/images/modal-2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/modal-3.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/modal-1.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/modal-4.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/modal-5.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-lg-50 ps-lg-4 d-flex flex-column">
+                    <h3 class="fs-5 fs-md-6 fw-medium text-neutral-700 mb-5 mb-lg-6">歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧</h3>
+                    <h4 class="fw-normal fs-3 mb-3">口味</h4>
+                    <div class="d-flex mb-5 mb-lg-6">
+                      <input type="radio" class="btn-check" name="meat" id="option1" autocomplete="off" checked>
+                      <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option1">牛肉</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option2" autocomplete="off">
+                      <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option2">雞肉</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option3" autocomplete="off">
+                      <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option3">海鮮</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option4" autocomplete="off">
+                      <label class="modal-btn d-flex align-items-center justify-content-center" for="option4">綜合</label>
+                    </div>
+                    <h4 class="fw-normal fs-3 mb-3">規格</h4>
+                    <div class="d-flex mb-5 mb-lg-6 flex-wrap gap-3">
+                      <input type="radio" class="btn-check" name="size" id="size-1" autocomplete="off" checked>
+                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-1">4磅(袋)<span
+                          class="text-neutral-500 fs-1">$280/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" disabled>
+                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                        for="size-2">4磅x2(袋)<span class="text-neutral-500 fs-1">完售</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off">
+                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-3">7磅(袋)<span
+                          class="text-neutral-500 fs-1">$244/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off">
+                      <label class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                        for="size-4">12磅(袋)<span class="text-neutral-500 fs-1">$210/磅</span></label>
+                    </div>
+                    <h4 class="fw-normal fs-3 mb-3">方案</h4>
+                    <div class="d-flex mb-5 mb-lg-6">
+                      <input type="radio" class="btn-check" name="plan" id="plan-1" autocomplete="off" checked>
+                      <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-1">$ 598<span
+                          class="text-neutral-500 fs-1">非會員</span></label>
+                      <input type="radio" class="btn-check" name="plan" id="plan-2" autocomplete="off">
+                      <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-2">$ 398<span
+                          class="text-neutral-500 fs-1">會員現折 200</span></label>
+                    </div>
+                    <div class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
+                      style="width: 460px; bottom: 0px;right: 0px;">
+                      <a class="d-block fw-medium link-neutral-0" href="#">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer rounded-0 border-0 p-5 pt-6 d-lg-none">
+                  <div class="w-100 rounded-full text-center bg-primary-300 py-3 ">
+                    <a class="d-block fw-medium link-neutral-0" href="#">加入購物車</a>
+                  </div>
+                </div>
+                <div class="modal-footer lg-modal-footer p-0 border-0 d-none d-lg-block">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--購物車 Modal end -->
           <!-- 麵包屑 -->
           <section class="pt-5 pb-7">
             <nav aria-label="breadcrumb pb-5">
@@ -1492,12 +1621,12 @@
                 </li>
               </ul>
               <div class="d-none d-lg-flex position-static ms-auto">
-                <div class="swiper-button-prev-2 p-4 me-4">
+                <div class="swiper-button-prev-productionList-2 p-4 me-4">
                   <span class="material-symbols-outlined text-neutral-800">
                     chevron_left
                   </span>
                 </div>
-                <div class="swiper-button-next-2 p-4">
+                <div class="swiper-button-next-productionList-2 p-4">
                   <span class="material-symbols-outlined text-neutral-800">
                     chevron_right
                   </span>
@@ -2240,8 +2369,8 @@
             slidesPerView: "2",
             // slidesOffsetAfter: -900,
             navigation: {
-              nextEl: '.swiper-button-next-2',
-              prevEl: '.swiper-button-prev-2',
+              nextEl: '.swiper-button-next-productionList-2',
+              prevEl: '.swiper-button-prev-productionList-2',
             },
             breakpoints: {
               400: {
@@ -2409,6 +2538,41 @@
             } else {
               button.classList.remove('hidden');
             }
+          });
+        </script>
+        <!-- modal的swiper -->
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper", {
+            spaceBetween: 12,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
+                },
+              },
+            },
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-2", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
           });
         </script>
 
