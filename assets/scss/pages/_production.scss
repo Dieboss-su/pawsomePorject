@@ -48,18 +48,18 @@
 .production-modal-taste-btn.active,
 .production-modal-speci-btn.show,
 .production-modal-taste-btn.show {
-  border: 2.5px solid #ec5501;
+  // border: 2.5px solid #ec5501;
   color: #ec5501;
   background-color: #fff;
-  box-shadow: none;
+  box-shadow: 0 0 1px 2.5px #ec5501;
 }
 
 .production-modal-speci-btn:hover,
 .production-modal-taste-btn:hover {
-  border: 1px solid #ec5501;
+  // border: 1px solid #ec5501;
   color: #ec5501;
   background: #fff2eb;
-  box-shadow: none;
+  box-shadow: 0 0 1px 1px #ec5501;
 }
 
 /* 確保 active 和 checked 狀態不被 hover 覆蓋 */
@@ -259,4 +259,12 @@
   box-shadow: none !important;
   background: #ffff;
   color: #ec5501;
+}
+.count-size {
+  max-width: 116px;
+  height: 32px;
+  @include md {
+    max-width: 91px;
+    height: 24px;
+  }
 }
