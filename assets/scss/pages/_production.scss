@@ -148,16 +148,18 @@
 
 /* 狀態樣式合併 */
 .btn.btn-outline-primary:hover,
+.btn.btn-outline-special:hover {
+  color: #848484;
+  border-color: #ec5501;
+}
+
 .btn.btn-outline-primary:active,
 .btn.btn-outline-primary:checked,
-.btn.btn-outline-special:hover,
 .btn.btn-outline-special:active,
-.btn.btn-outline-special:checked,
-.btn.btn-outline-primary:focus,
-.btn.btn-outline-special:focus {
-  background-color: #ec5501;
-  color: white;
-  border: none;
+.btn.btn-outline-special:checked {
+  background-color: #fff2eb;
+  color: #ec5501;
+  border-color: #ec5501;
 }
 
 .btn-check:checked + .btn,
@@ -166,8 +168,8 @@
 .btn.active,
 .btn.show,
 .btn.hover {
-  color: white;
-  background-color: #ec5501;
+  background-color: #fff2eb;
+  color: #ec5501;
   border-color: #ec5501;
 }
 .comment-swiper {
@@ -217,28 +219,10 @@
     object-fit: cover;
   }
 }
-// font-size: 16px;
-//     background: #fff;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     }
-//     .m-card{
-//         max-width: 240px;
-//     }
-//     .h-p1{
-//         overflow: hidden;
-//         height: 44px;
-//         @include md{
-//             height: 58px;
-//         }
-//     }
-//     .swiper-slide img {
-//       display: block;
-//       height: 100%;
-//       object-fit: cover;
-//     }
-//   }
+.swiper-slide .swiper-slide-active {
+  opacity: 1;
+  border: 1px solid #ec5501;
+}
 .production-bottom-btn {
   padding: 4px 12px;
   outline: 1px solid #bbbbbb;
