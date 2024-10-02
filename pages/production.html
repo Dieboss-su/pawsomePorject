@@ -466,7 +466,7 @@
                 </div>
                 <div class="production-card">
                   <div class="d-flex mb-6 align-items-center">
-                    <div class="border border-neutarl-400 d-flex overflow-hidden me-6"
+                    <div class="border border-neutarl-400 d-flex overflow-hidden me-6 rounded-1"
                       style="max-width: 91px; height: 24px;">
                       <div
                         class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
@@ -1696,6 +1696,41 @@
         }
       });
     </script>
+    <!-- modal的swiper -->
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper", {
+            spaceBetween: 12,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
+                },
+              },
+            },
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-2", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+        </script>
 </body>
 
 </html>
