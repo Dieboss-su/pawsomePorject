@@ -110,13 +110,11 @@
     border: 1px #EC5501 solid;
     color: #EC5501;
     &:hover{
-        background: #EC5501;
-        color: #fff;
+        background: #FFF2EB;
     }
     @include s-md{
         &.active{
-        background: #EC5501;
-        color: #fff;
+        background: #FFF2EB;
         }
     }
 }
