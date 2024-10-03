@@ -12,8 +12,8 @@
     font-weight: $headings-font-weight;
   }
   .nav-link:hover {
-    color: $primary-300;
     background-color: $primary-0;
+    border: none;
   }
 }
 
@@ -95,8 +95,9 @@
     color: $neutral-800;
   }
   .nav-link:hover {
-    color: #111111;
+    // color: #111111;
     background: #f0f0f0;
+    border: none;
   }
   .nav-link:active {
     color: #ec5501;
