@@ -433,7 +433,7 @@
               <div class="col-md-3">
                 <div class="production-card">
                   <!-- 非會員價 -->
-                  <div class="card  p-4 border border-1  mb-3">
+                  <div class="card  p-4 vipChose-btn  mb-3" id="non-member-card">
                     <div class="d-flex pt-2 ps-2">
                       <input type="radio" class="form-check-input" name="price" id="non-member" autocomplete="off" style="height:24px; width:24px">
                       <label class="ms-3 form-check-label" for="non-member">
@@ -444,9 +444,8 @@
                       </label>
                     </div>
                   </div>
-
                   <!-- 會員特惠價 -->
-                  <div class="card  p-4 border border-2 border-primary-300">
+                  <div class="card  p-4 vipChose-btn active" id="member-card" >
                     <div class="d-flex pt-2 ps-2 border-bottom border-neutral-400" style="border:1px;">
                       <input type="radio" class="form-check-input" name="price" id="member" autocomplete="off" checked style="height:24px; width:24px">
                       <label class="ms-3 form-check-label" for="member">
@@ -1729,6 +1728,37 @@
               swiper: swiper,
             },
           });
+        </script>
+        <script>
+          // 獲取元素
+              const nonMemberRadio = document.getElementById('non-member');
+              const memberRadio = document.getElementById('member');
+              const nonMemberCard = document.getElementById('non-member-card');
+              const memberCard = document.getElementById('member-card');
+
+              // 監聽非會員價的選擇
+              nonMemberRadio.addEventListener('change', function() {
+                if (this.checked) {
+                  nonMemberCard.classList.add('active'); // 非會員卡片變為active
+                  memberCard.classList.remove('active'); // 會員卡片去除active
+                }
+              });
+
+              // 監聽會員特惠價的選擇
+              memberRadio.addEventListener('change', function() {
+                if (this.checked) {
+                  memberCard.classList.add('active'); // 會員卡片變為active
+                  nonMemberCard.classList.remove('active'); // 非會員卡片去除active
+                }
+              });
+
+              // 預設選擇的狀態
+              window.onload = function() {
+                if (memberRadio.checked) {
+                  memberCard.classList.add('active');
+                  nonMemberCard.classList.remove('active');
+                }
+              }
         </script>
 </body>
 

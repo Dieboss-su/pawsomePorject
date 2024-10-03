@@ -268,3 +268,10 @@
     height: 24px;
   }
 }
+.vipChose-btn {
+  outline: 1px solid #bbbbbb;
+  cursor: pointer;
+}
+.vipChose-btn.active {
+  outline: 2px solid #ec5501;
+}
