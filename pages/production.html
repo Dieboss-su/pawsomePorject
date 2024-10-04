@@ -1604,7 +1604,12 @@
             swiper: swiper,
           },
         });
-          var swiper2 = new Swiper(".comment-swiper", {
+        
+        </script>
+
+        <!-- 評論旁邊-swiper的script -->
+      <script>
+          var swiper4 = new Swiper(".comment-swiper", {
             spaceBetween: 8,
             slidesPerView: '2.05',
             // navigation: {
@@ -1617,28 +1622,34 @@
                 slidesPerView: '4.1',
               },
             },
-            thumbs: {
-              swiper: swiper,
-            },
-          });
+            
+          });          
+      </script>  
+        <!-- bottom-swiper的script -->
+      <script>
+        var swiper3 = new Swiper(".production-swiper-bottom", {
+          spaceBetween: 24,
+          slidesPerView: '1.1',
+          // slidesOffsetAfter: -900,
+          navigation: {
+            nextEl: '.swiper-button-next-bottom',
+            prevEl: '.swiper-button-prev-bottom',
+          },
+          breakpoints: {
 
-          var swiper3 = new Swiper(".production-swiper-bottom", {
-            spaceBetween: 24,
-            slidesPerView: '1.1',
-            // slidesOffsetAfter: -900,
-            navigation: {
-              nextEl: '.swiper-button-next-bottom',
-              prevEl: '.swiper-button-prev-bottom',
+            925: {  //当屏幕宽度大于等于768 
+              slidesPerView: '4',
             },
-            breakpoints: {
-
-              768: {  //当屏幕宽度大于等于768 
-                slidesPerView: '4',
-              },
+            770: {  //当屏幕宽度大于等于768 
+              slidesPerView: '3.5',
             },
-            loop: false,
-          });
-        </script>
+            650: {  //当屏幕宽度大于等于768 
+              slidesPerView: '3',
+            },
+          },
+          loop: false,
+        });
+      </script>
         <!-- btn的script -->
          <script>
           // 獲取所有按鈕組
